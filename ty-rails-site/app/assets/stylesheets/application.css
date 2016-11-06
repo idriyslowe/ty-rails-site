@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+ :root {
+  --main-bg-color: white;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+
+.header-wrapper {
+  height: 70%;
+  text-align: center;
+  margin: 3%;
+}
+
+.header-wrapper img {
+  border: 3px solid black;
+  height: 400px;
+}

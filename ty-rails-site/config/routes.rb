@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  resources :posts
-  resources :comics
 
-  root 'posts#index'
+  root 'posts#home'
+
+  get '/posts/home' => 'posts#home'
+  get '/posts/index' => 'posts#index'
+  get '/posts/new' => 'posts#new'
+  post '/posts' => 'posts#create'
+  get '/posts/:id' => 'posts#show'
+
+  get '/comics/index' => 'comics#index'
 end

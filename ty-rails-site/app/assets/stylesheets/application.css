@@ -19,6 +19,12 @@
 }
 body {
   background-color: var(--main-bg-color);
+  padding-bottom: 5%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .header-wrapper {
@@ -30,4 +36,88 @@ body {
 .header-wrapper img {
   border: 3px solid black;
   height: 400px;
+}
+
+section {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.vertical-spacer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  margin: 0;
+}
+
+.header-wrapper p {
+  font-size: 15px;
+}
+
+.comics-cube-wrapper {
+  width: 45%;
+  background-color: white;
+  padding: 0;
+  position: relative;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.page-header {
+  font-size: 40px;
+  text-align: center;
+}
+
+.home-cube-wrapper {
+  width: 45%;
+  background-color: white;
+  padding: 0;
+  position: relative;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.index-cube-wrapper {
+  width: 100%;
+  background-color: white;
+  padding: 0;
+  position: relative;
+}
+
+.index-link {
+  text-align: center;
+}
+
+.cube-top-left {
+  background-color: var(--main-bg-color);
+  float: left;
+  border-left: 90px solid transparent;
+  border-bottom: 70px solid red;
+}
+
+.content-cube {
+  background-color: white;
+  padding: 1% 3% 3% 3%;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 70px solid black;
+  border-left: 90px solid red;
+}
+
+.content-cube h1 {
+  padding-left: 0;
+  font-size: 30px;
+}
+
+.cube-bottom-right {
+  background-color: var(--main-bg-color);
+  bottom: 0;
+  right: 0;
+  border-left: 90px solid black;
+  border-bottom: 70px solid transparent;
+  position: absolute;
 }

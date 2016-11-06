@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get '/posts/:id' => 'posts#show'
 
   get '/comics/index' => 'comics#index'
+  get '/comics/show' => 'comics#show'
 end

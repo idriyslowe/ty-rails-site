@@ -108,6 +108,15 @@ section {
   border-left: 90px solid red;
 }
 
+.show-header h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.show-image {
+  text-align: center;
+}
+
 .content-cube h1 {
   padding-left: 0;
   font-size: 30px;

@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   post '/posts' => 'posts#create'
   get '/posts/:id' => 'posts#show'
 
-  get '/comics/index' => 'comics#index'
-  get '/comics/show' => 'comics#show'
+  get '/comics' => 'comics#index'
+  get '/comics/:id' => 'comics#show'
 end

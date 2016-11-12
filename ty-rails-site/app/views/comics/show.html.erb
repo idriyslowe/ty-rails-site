@@ -1,3 +1,12 @@
-<section>
-  <h1 class="page-header"><%= link_to "COMICS", "comics/index"%></h1>
-</section>
+<div class="header-wrapper">
+  <div>
+    <%= link_to image_tag("ty-home-image.jpg", :alt => ""), "/" %>
+  </div>
+</div>
+<div class="show-header">
+<!-- box each link as they will direct to different places -->
+  <h1><%= link_to "COMICS: ", "/comics" %><%= @comic.upcase_name %></h1>
+</div>
+<div class="show-image">
+ <%= image_tag( "#{@comic.series_image}" ) %>
+</div>

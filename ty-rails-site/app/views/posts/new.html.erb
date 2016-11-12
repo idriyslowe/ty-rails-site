@@ -1,3 +1,8 @@
+<div class="header-wrapper">
+  <div>
+    <%= link_to image_tag("ty-home-image.jpg", :alt => ""), "/" %>
+  </div>
+</div>
 <%= form_tag"/posts", method: :post do %>
   <%= label_tag :heading, "Heading:" %>
   <%= text_field_tag :heading %>

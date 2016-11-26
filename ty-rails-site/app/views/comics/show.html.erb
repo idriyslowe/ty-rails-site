@@ -1,12 +1,19 @@
 <div class="header-wrapper">
   <div>
-    <%= link_to image_tag("ty-home-image.jpg", :alt => ""), "/" %>
+    <%= link_to image_tag(@comic.series_image, :alt => ""), "/" %>
   </div>
 </div>
 <div class="show-header">
 <!-- box each link as they will direct to different places -->
   <h1><%= link_to "COMICS: ", "/comics" %><%= @comic.upcase_name %></h1>
 </div>
-<div class="show-image">
- <%= image_tag( "#{@comic.series_image}" ) %>
+
+<div class="comics-cube-wrapper">
+  <div class="cube-top-left"></div>
+  <div class="cube-bottom-right"></div>
+  <div class="content-cube">
+    <div class="series-image">
+     <%= image_tag( "#{@comic.series_image}" ) %>
+    </div>
+  </div>
 </div>

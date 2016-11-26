@@ -3,15 +3,23 @@
     <%= link_to image_tag("ty-home-image.jpg", :alt => ""), "/" %>
   </div>
 </div>
+
 <section>
   <h1 class="page-header">COMICS</h1>
   <% @comics.each do |series| %>
+
     <div class="comics-cube-wrapper">
       <div class="cube-top-left"></div>
       <div class="cube-bottom-right"></div>
       <div class="content-cube">
-        <h1 class="index-link"><%= link_to "#{series.upcase_name}", "comics/#{series.id}" %></h1>
+        <%= link_to "comics/#{series.id}" do %>
+          <div class="series-image">
+            <p class="series-name"><%= series.upcase_name %></p>
+            <%= image_tag( "#{series.series_image}" ) %>
+          </div>
+        <% end %>
       </div>
     </div>
+
   <% end %>
 </section>

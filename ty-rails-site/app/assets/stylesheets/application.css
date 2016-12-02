@@ -31,11 +31,32 @@ a {
   height: 70%;
   text-align: center;
   margin: 3%;
+  font-size: 15px;
 }
 
 .header-wrapper img {
   border: 3px solid black;
   height: 400px;
+  display: inline-block;
+}
+
+.header-wrapper div {
+  width: 30%;
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  padding: 0;
+}
+
+.header-wrapper div h1, .header-wrapper div p {
+  border: 3px solid black;
+  padding: 8% 0 8% 0;
+  margin: 3% 0 1% 0;
+}
+
+#about {
+  padding: 5%;
+  text-align: justify;
 }
 
 section {
@@ -46,10 +67,6 @@ section {
   height: 50px;
   background-color: var(--main-bg-color);
   margin: 0;
-}
-
-.header-wrapper p {
-  font-size: 15px;
 }
 
 .comics-cube-wrapper {
@@ -69,7 +86,7 @@ section {
   text-align: center;
 }
 
-.home-cube-wrapper {
+/*.home-cube-wrapper {
   width: 45%;
   background-color: white;
   padding: 0;
@@ -79,7 +96,7 @@ section {
   vertical-align: top;
   margin-left: 2%;
   margin-bottom: 2%;
-}
+}*/
 
 .index-cube-wrapper {
   width: 100%;
@@ -97,6 +114,15 @@ section {
   float: left;
   border-left: 90px solid transparent;
   border-bottom: 70px solid red;
+}
+
+.cube-bottom-right {
+  background-color: var(--main-bg-color);
+  bottom: 0;
+  right: 0;
+  border-left: 90px solid black;
+  border-bottom: 70px solid transparent;
+  position: absolute;
 }
 
 .content-cube {
@@ -120,6 +146,7 @@ section {
 
 /*center image... overflow is hidden*/
 /*boxes should align vertically when mobile*/
+/*should series name always be visible or only on hover?*/
 .series-image img {
   opacity: 0.7;
   height: 250px;
@@ -137,13 +164,4 @@ section {
 .content-cube h1 {
   padding-left: 0;
   font-size: 30px;
-}
-
-.cube-bottom-right {
-  background-color: var(--main-bg-color);
-  bottom: 0;
-  right: 0;
-  border-left: 90px solid black;
-  border-bottom: 70px solid transparent;
-  position: absolute;
 }

@@ -11,21 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161114014056) do
+ActiveRecord::Schema.define(version: 20161202031004) do
 
   create_table "comics", force: :cascade do |t|
     t.string   "name"
     t.string   "series_image"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.string   "description"
   end
 
   create_table "issues", force: :cascade do |t|
-    t.string   "name"
+    t.string   "title"
     t.integer  "comic_id"
     t.string   "synopsis"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "subtitle"
+    t.string   "type"
   end
 
   create_table "posts", force: :cascade do |t|

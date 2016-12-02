@@ -1,0 +1,12 @@
+<%= form_tag"/comics", method: :post do %>
+  <%= label_tag :name, "Comic Name:" %>
+  <%= text_field_tag :name %>
+
+  <%= label_tag :series_image, "Series Image Url:" %>
+  <%= text_field_tag :series_image %>
+
+  <%= label_tag :description, "Comic Description:" %>
+  <%= text_field_tag :description %>
+  
+  <%= submit_tag "Submit" %>
+<% end %>

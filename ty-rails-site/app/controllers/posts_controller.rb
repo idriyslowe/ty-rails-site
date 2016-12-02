@@ -1,17 +1,21 @@
 class PostsController < ApplicationController
   def home
+    @header_image = "ty-home-image.jpg"
   end
 
   def index
+    @header_image = "ty-home-image.jpg"
     @posts = Post.all
   end
 
   def show
     @post = Post.find(params[:id])
+    @header_image = "ty-home-image.jpg"
   end
 
   def new
     @post = Post.new
+    @header_image = "ty-home-image.jpg"
   end
 
   def create

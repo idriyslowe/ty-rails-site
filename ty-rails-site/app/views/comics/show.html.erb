@@ -1,19 +1,21 @@
-<div class="header-wrapper">
-  <div>
-    <%= link_to image_tag(@comic.series_image, :alt => ""), "/" %>
-  </div>
-</div>
+
 <div class="show-header">
 <!-- box each link as they will direct to different places -->
   <h1><%= link_to "COMICS: ", "/comics" %><%= @comic.upcase_name %></h1>
 </div>
-
-<div class="comics-cube-wrapper">
-  <div class="cube-top-left"></div>
-  <div class="cube-bottom-right"></div>
-  <div class="content-cube">
-    <div class="series-image">
-     <%= image_tag( "#{@comic.series_image}" ) %>
+ <p><%= @comic.description %></p>
+<!-- Add issue name to wells. Issue show pages will be shoppable with prev/next buttons -->
+<!-- Add images model... type: cover, page, detail, issue_id; belongs to issue -->
+<section>
+  <div class="comics-cube-wrapper">
+    <div class="cube-top-left"></div>
+    <div class="cube-bottom-right"></div>
+    <div class="content-cube">
+      <div class="series-image">
+        <p class="series-name">Volume 1</p>
+        <p>Talk to the Hand</p>
+       <%= image_tag( "#{@comic.series_image}" ) %>
+      </div>
     </div>
   </div>
-</div>
+</section>

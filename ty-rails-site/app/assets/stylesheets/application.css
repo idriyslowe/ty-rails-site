@@ -16,6 +16,7 @@
 
  :root {
   --main-bg-color: white;
+  --cube-left-color: rgb(69, 68, 68);
 }
 body {
   background-color: var(--main-bg-color);
@@ -60,6 +61,7 @@ a {
 }
 
 section {
+  margin: 6%;
   padding-left: 3%;
   padding-right: 3%;
 }
@@ -113,14 +115,14 @@ section {
   background-color: var(--main-bg-color);
   float: left;
   border-left: 90px solid transparent;
-  border-bottom: 70px solid red;
+  border-bottom: 70px solid var(--cube-left-color);
 }
 
 .cube-bottom-right {
   background-color: var(--main-bg-color);
   bottom: 0;
   right: 0;
-  border-left: 90px solid black;
+  border-left: 90px solid var(--cube-left-color);
   border-bottom: 70px solid transparent;
   position: absolute;
 }
@@ -131,7 +133,7 @@ section {
   border-right: 3px solid black;
   border-top: 3px solid black;
   border-bottom: 70px solid black;
-  border-left: 90px solid red;
+  border-left: 90px solid var(--cube-left-color);
 }
 
 .show-header h1 {

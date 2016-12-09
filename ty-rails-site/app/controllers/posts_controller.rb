@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  def home
+  def about
     @header_image = "ty-home-image.jpg"
   end
 

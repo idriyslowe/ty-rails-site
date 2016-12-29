@@ -1,21 +1,10 @@
 
 <section>
-
-  <h1 class="page-header">COMICS</h1>
   <% @comics.each do |series| %>
-
-    <div class="comics-cube-wrapper">
-      <div class="cube-top-left"></div>
-      <div class="cube-bottom-right"></div>
-      <div class="content-cube">
-        <%= link_to "comics/#{series.id}" do %>
-          <div class="series-image">
-            <p class="series-name"><%= series.upcase_name %></p>
-            <%= image_tag( "#{series.series_image}" ) %>
-          </div>
-        <% end %>
-      </div>
+    <div class="comics-wrapper">
+      <%= link_to "comics/#{series.id}" do %>
+        <%= image_tag( "#{series.series_image}" ) %>
+      <% end %>
     </div>
-
   <% end %>
 </section>

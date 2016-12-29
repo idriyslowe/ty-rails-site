@@ -1,0 +1,17 @@
+<!-- BUILD A SLIDESHOW WITH A NAV BAR ON THE LEFT -->
+<!-- SLIDESHOW DEFAULTS TO PAGE ONE OF ISSUE -->
+<!-- BUY BUTTON ON BOTTOM -->
+<section>
+  <div class="issues-nav">
+  <!-- each image links to that image -->
+    <% 4.times do %>
+      <%= image_tag( "#{@comic.series_image}", :class => "issues-main-image") %>
+    <% end %>
+  </div>
+
+  <div>
+    <%= link_to "#" do %>
+      <%= image_tag( "#{@comic.series_image}", :class => "issues-show-main-image") %>
+    <% end %>
+  </div>
+</section>

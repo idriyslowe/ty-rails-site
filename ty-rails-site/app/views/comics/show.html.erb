@@ -1,21 +1,23 @@
-
-<div class="show-header">
-<!-- box each link as they will direct to different places -->
-  <h1><%= link_to "COMICS: ", "/comics" %><%= @comic.upcase_name %></h1>
-</div>
- <p><%= @comic.description %></p>
-<!-- Add issue name to wells. Issue show pages will be shoppable with prev/next buttons -->
 <!-- Add images model... type: cover, page, detail, issue_id; belongs to issue -->
+<!-- page :integer which will be nil for other image types -->
 <section>
-  <div class="comics-cube-wrapper">
-    <div class="cube-top-left"></div>
-    <div class="cube-bottom-right"></div>
-    <div class="content-cube">
-      <div class="series-image">
-        <p class="series-name">Volume 1</p>
-        <p>Talk to the Hand</p>
-       <%= image_tag( "#{@comic.series_image}" ) %>
-      </div>
-    </div>
+  <div class="show-header">
+    <h1><%= @comic.upcase_name %></h1>
+  </div>
+  <p><%= @comic.description %></p>
+
+  <div class="issues-index-wrapper">
+<!-- LATEST ISSUE IMAGE -->
+    <%= link_to "/issues/1" do %>
+      <%= image_tag( "#{@comic.series_image}", :class => "issues-main-image") %>
+    <% end %>
+<!-- ALL IMAGES DESC CREATED_AT-->
+    <div class="issues-index">
+      <% 5.times do %>
+          <%= link_to "/issues/1" do %>
+            <%= image_tag( "#{@comic.series_image}") %>
+          <% end %>
+      <% end %>
+    <div>
   </div>
 </section>

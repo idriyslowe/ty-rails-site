@@ -61,7 +61,7 @@ a {
 }
 
 section {
-  margin: 6%;
+  margin: 5%;
   padding-left: 3%;
   padding-right: 3%;
 }
@@ -71,34 +71,73 @@ section {
   margin: 0;
 }
 
-.comics-cube-wrapper {
+.comics-wrapper {
   width: 45%;
+  height: 500px;
   background-color: white;
   padding: 0;
   position: relative;
   float: left;
   display: inline-block;
-  vertical-align: top;
+  /*centering below*/
   margin-left: 2%;
   margin-bottom: 2%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.comics-wrapper img {
+  height: 100%;
+  width: auto;
+}
+
+.issues-index-wrapper {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  display: inline;
+}
+
+.issues-main-image {
+  display: inline;
+  width: 30%;
+}
+
+/*to the right to the right*/
+
+.issues-index {
+  width: 55%;
+  display: inline-block;
+}
+
+.issues-index img {
+  padding: 1%;
+  width: 26%;
+}
+
+.issues-nav {
+  float: left;
+  width: 30%;
+  height: 100%;
+  margin-right: 6%;
+}
+
+.issues-nav img {
+  padding: 1%;
+  display: inline;
+  width: 45%;
+}
+
+.issues-show-main-image {
+  height: 100%;
 }
 
 .page-header {
   font-size: 40px;
   text-align: center;
 }
-
-/*.home-cube-wrapper {
-  width: 45%;
-  background-color: white;
-  padding: 0;
-  position: relative;
-  float: left;
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 2%;
-  margin-bottom: 2%;
-}*/
 
 .index-cube-wrapper {
   width: 100%;

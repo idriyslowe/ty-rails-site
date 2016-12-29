@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get '/comics/new' => 'comics#new'
   post '/comics' => 'comics#create'
   get '/comics/:id' => 'comics#show'
+
+  get '/issues/:id' => 'issues#show'
 end

@@ -6,7 +6,6 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta charset="utf-8">
-  <link href="ty-main.css" rel="stylesheet">
   <title>Tyrell Cannon</title>
 </head>
 <body>
@@ -19,7 +18,7 @@
       <h1 class="index-link"><%= link_to "ABOUT", "/posts/about" %></h1>  
     </div>
 
-      <%= link_to image_tag(@header_image, :alt => ""), "/" %>
+    <%= link_to image_tag(@header_image, :alt => ""), "/" %>
 
     <div>
       <a href="https://www.instagram.com/tcannoncomics" target="_blank"><h1>INSTAGRAM</h1></a>

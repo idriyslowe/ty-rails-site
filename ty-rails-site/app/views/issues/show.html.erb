@@ -5,13 +5,15 @@
   <div class="issues-nav">
   <!-- each image links to that image -->
     <% 4.times do %>
-      <%= image_tag( "#{@comic.series_image}", :class => "issues-main-image") %>
+      <%= link_to "#" do %>
+       <%= image_tag( "#{@comic.series_image}" ) %>
+      <% end %>
     <% end %>
   </div>
 
-  <div>
+  <div class="issues-show-main-image">
     <%= link_to "#" do %>
-      <%= image_tag( "#{@comic.series_image}", :class => "issues-show-main-image") %>
+      <%= image_tag( "#{@comic.series_image}" ) %>
     <% end %>
   </div>
 </section>

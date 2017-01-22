@@ -1,10 +1,9 @@
-
 <section>
   <% @comics.each do |series| %>
-    <div class="comics-wrapper">
-      <%= link_to "comics/#{series.id}" do %>
-        <%= image_tag( "#{series.series_image}" ) %>
-      <% end %>
-    </div>
+      <div class="comics-well">
+        <%= link_to "comics/#{series.id}" do %>
+          <%= image_tag( "#{series.series_image}" ) %>
+        <% end %>
+      </div>
   <% end %>
 </section>

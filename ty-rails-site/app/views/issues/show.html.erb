@@ -1,19 +1,52 @@
-<!-- BUILD A SLIDESHOW WITH A NAV BAR ON THE LEFT -->
-<!-- SLIDESHOW DEFAULTS TO PAGE ONE OF ISSUE -->
 <!-- BUY BUTTON ON BOTTOM -->
 <section>
-  <div class="issues-nav">
-  <!-- each image links to that image -->
+
+  <div>
     <% 4.times do %>
       <%= link_to "#" do %>
-       <%= image_tag( "#{@comic.series_image}" ) %>
+       <%= image_tag( "#{@comic.series_image}", :class => "slideshow-image" ) %>
       <% end %>
     <% end %>
   </div>
 
-  <div class="issues-show-main-image">
-    <%= link_to "#" do %>
-      <%= image_tag( "#{@comic.series_image}" ) %>
+  <div class="issues-nav">
+    <% counter = 1 %>
+    <% 4.times do %>
+      <%= image_tag( "#{@comic.series_image}", :class => "slideshow-thumbnails opacity-off", :onclick => "currentDiv(#{counter})" ) %>
+      <% counter += 1 %>
     <% end %>
   </div>
+
+  <button>Buy Something!</button>
 </section>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slideshow-image");
+  var dots = document.getElementsByClassName("slideshow-thumbnails");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " opacity-off";
+}
+</script>
+
+

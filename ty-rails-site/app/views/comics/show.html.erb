@@ -7,12 +7,12 @@
   <p><%= @comic.description %></p>
 
   <% @comic.issues.each do |issue| %>
+
     <div class="issues-index-wrapper">
-  <!-- LATEST ISSUE IMAGE -->
       <%= link_to "/issues/#{issue.id}" do %>
         <%= image_tag( "#{@comic.series_image}", :class => "issues-main-image") %>
       <% end %>
-  <!-- ALL IMAGES DESC CREATED_AT-->
+      
       <div class="issues-index">
         <% 5.times do %>
             <%= link_to "/issues/#{issue.id}" do %>
@@ -20,5 +20,8 @@
             <% end %>
         <% end %>
       </div>
+    </div>
+
   <% end %>
+
 </section>

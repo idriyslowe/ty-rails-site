@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #565656;
+}
+
 button {
   text-align: center;
   margin-left: 45%;
@@ -39,17 +43,30 @@ button {
   margin-top: 2%;
 }
 
+footer {
+  text-align: center;
+  margin: 10%;
+}
+
 .header-wrapper {
   height: 70%;
   text-align: center;
   margin: 3%;
   font-size: 15px;
+  overflow: hidden;
 }
 
-.header-wrapper img {
+.home-hover-buttons:hover .header-image {
+  visibility: hidden;
+}
+
+.header-image {
   border: 3px solid black;
-  width: 32%;
   display: inline-block;
+  z-index: 2;
+  width: 98%;
+  left: 0;
+  top: 0;
 }
 
 .header-wrapper div {
@@ -64,6 +81,17 @@ button {
   border: 3px solid black;
   padding: 8% 0 8% 0;
   margin: 4% 0 1% 0;
+}
+
+.home-button {
+  display: inline-block;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  width: 98%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 #about {

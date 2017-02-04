@@ -21,10 +21,8 @@
 body {
   background-color: var(--main-bg-color);
   padding-bottom: 5%;
-  /*helvetica is awesome*/
-  /*font-family: Tahoma;*/
   font-family: Helvetica;
-  /*font-family: Trebuchet;*/
+  height: 100%;
 }
 
 a {
@@ -33,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: #565656;
+  color: #C4C4C4;
 }
 
 button {
@@ -45,7 +43,19 @@ button {
 
 footer {
   text-align: center;
-  margin: 10%;
+  height: 5%;
+}
+
+footer p {
+  display: inline;
+  padding: 10%;
+}
+
+section {
+  margin: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  height: 100%;
 }
 
 .header-wrapper {
@@ -99,11 +109,6 @@ footer {
   text-align: justify;
 }
 
-section {
-  margin: 5%;
-  padding-left: 3%;
-  padding-right: 3%;
-}
 .vertical-spacer {
   height: 50px;
   background-color: var(--main-bg-color);
@@ -203,7 +208,7 @@ section {
   background-color: var(--main-bg-color);
   bottom: 0;
   right: 0;
-  border-left: 90px solid var(--cube-left-color);
+  border-left: 90px solid black;
   border-bottom: 70px solid transparent;
   position: absolute;
 }

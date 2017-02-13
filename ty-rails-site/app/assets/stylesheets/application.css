@@ -18,11 +18,15 @@
   --main-bg-color: white;
   --cube-left-color: rgb(69, 68, 68);
 }
+
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: var(--main-bg-color);
   padding-bottom: 5%;
   font-family: Helvetica;
-  height: 100%;
 }
 
 a {
@@ -44,6 +48,7 @@ button {
 footer {
   text-align: center;
   height: 5%;
+  position: relative;
 }
 
 footer p {
@@ -56,6 +61,17 @@ section {
   padding-left: 3%;
   padding-right: 3%;
   height: 100%;
+}
+
+.comics-index-span {
+  min-height: 95%;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.clearfooter {
+  height: 5%;
+  clear: both;
 }
 
 .header-wrapper {
@@ -98,10 +114,11 @@ section {
   background-color: white;
   position: absolute;
   z-index: -1;
-  width: 98%;
-  height: 100%;
   left: 0;
   top: 0;
+  padding-left: 30%;
+  padding-top: 40%;
+  font-size: 45px;
 }
 
 #about {

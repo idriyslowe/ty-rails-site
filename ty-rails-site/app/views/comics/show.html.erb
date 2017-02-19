@@ -1,38 +1,24 @@
-<!-- Add images model... type: cover, page, detail, issue_id; belongs to issue -->
-<!-- page :integer which will be nil for other image types -->
 <section>
   <div class="show-header">
     <h1><%= @comic.upcase_name %></h1>
   </div>
 
   <div class="vertical-spacer"></div>
-
-  <div class="index-cube-wrapper">
-    <div class="cube-top-left"></div>
-    <div class="cube-bottom-right"></div>
-    <div class="content-cube">
-      <p><%= @comic.description %></p>
-    </div>
-  </div>
-
+  <p><%= @comic.description %></p>
   <div class="vertical-spacer"></div>
 
-  <% @comic.issues.each do |issue| %>
+  <div class="issues-index-wrapper">
+    <%= link_to "/issues/#{@latest_issue.id}" do %>
+      <%= image_tag( "#{@comic.series_image}", :class => "issues-main-image") %>
+    <% end %>
 
-    <div class="issues-index-wrapper">
-      <%= link_to "/issues/#{issue.id}" do %>
-        <%= image_tag( "#{@comic.series_image}", :class => "issues-main-image") %>
-      <% end %>
-
-      <div class="issues-index">
-        <% 5.times do %>
-            <%= link_to "/issues/#{issue.id}" do %>
-              <%= image_tag( "#{@comic.series_image}") %>
-            <% end %>
+    <div class="issues-index">
+      <% @comic.issues.each do |issue| %>
+        <%= link_to "/issues/#{issue.id}" do %>
+          <%= image_tag( "#{@comic.series_image}") %>
         <% end %>
-      </div>
+      <% end %>
     </div>
-
-  <% end %>
+  </div>
 
 </section>

@@ -1,24 +1,38 @@
-<section>
+<section class="main-section container-fluid">
   <div class="show-header">
     <h1><%= @comic.upcase_name %></h1>
   </div>
 
-  <div class="vertical-spacer"></div>
-  <p><%= @comic.description %></p>
-  <div class="vertical-spacer"></div>
+  <div class="comic-description">
+    <p><%= @comic.description %></p>
+  </div>
 
-  <div class="issues-index-wrapper">
-    <%= link_to "/issues/#{@latest_issue.id}" do %>
-      <%= image_tag( "#{@comic.series_image}", :class => "issues-main-image") %>
+  <div class="comics-index-span row">
+    <% @comic.issues.each do |issue| %>
+      <div class="comics-well col-lg-6" data-toggle="modal" data-target="#myModal-<%=issue.id%>">
+        <%= image_tag( "#{@comic.series_image}" ) %>
+      </div>
+
+      <div class="modal fade" id="myModal-<%=issue.id%>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel"><%=issue.title%></h4>
+            </div>
+
+            <%= link_to "/issues/#{issue.id}" do %>
+              <div class="comics-modal modal-body">
+                <%= image_tag( "#{@comic.series_image}" ) %>
+              </div>
+            <% end %>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <% end %>
-
-    <div class="issues-index">
-      <% @comic.issues.each do |issue| %>
-        <%= link_to "/issues/#{issue.id}" do %>
-          <%= image_tag( "#{@comic.series_image}") %>
-        <% end %>
-      <% end %>
-    </div>
   </div>
 
 </section>

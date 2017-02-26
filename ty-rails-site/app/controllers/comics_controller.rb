@@ -13,6 +13,7 @@ class ComicsController < ApplicationController
 
   def shop
     @comics = Comic.all
+    # @prints = Print.all
     @header_image = "ty-home-image.jpg"
   end
 

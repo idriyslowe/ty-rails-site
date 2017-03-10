@@ -6,7 +6,6 @@ class ComicsController < ApplicationController
 
   def show
     @comic = Comic.find(params[:id])
-    # @comic = Comic.friendly_find("")
     @latest_issue = @comic.issues.last
     @header_image = @comic.series_image
   end
@@ -23,11 +22,29 @@ class ComicsController < ApplicationController
   end
 
   def create
-    @comic = Comic.new(name: params[:name], series_image: params[:series_image], description: params[:description])
+    @comic = Comic.new(comic_params)
     if @comic.save
       redirect_to "/comics/#{@comic.id}"
     else
-      redirect_to '/'
+      redirect_to "/"
     end
   end
+
+  private
+    def comic_params
+      params.permit(:name, :description, :series_image)
+    end
 end
+
+# u = User.new
+# u.avatar = params[:file] # Assign a file like this, or
+
+# # like this
+# File.open('somewhere') do |f|
+#   u.avatar = f
+# end
+
+# u.save!
+# u.avatar.url # => '/url/to/file.png'
+# u.avatar.current_path # => 'path/to/file.png'
+# u.avatar_identifier # => 'file.png'

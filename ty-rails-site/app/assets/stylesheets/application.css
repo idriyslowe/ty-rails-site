@@ -15,6 +15,15 @@
  *= require_self
  */
 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../assets/glyphicons-halflings-regular.eot');
+  src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/glyphicons-halflings-regular.woff') format('woff'),
+  url('../assets/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
  :root {
   --main-bg-color: white;
   --cube-left-color: rgb(69, 68, 68);
@@ -50,6 +59,7 @@ footer {
   text-align: center;
   height: 5%;
   position: relative;
+  font-size: 1.5em;
 }
 
 footer p {
@@ -161,6 +171,19 @@ section:after {
   margin-bottom: 5%;
 }
 
+.comics-well:hover .click-for-preview {
+  visibility: visible;
+}
+
+.click-for-preview {
+  visibility: hidden;
+  color: white;
+  position: absolute;
+  right: 32%;
+  top: 25%;
+  font-size: 2em;
+}
+
 .comics-well img {
   height: 500px;
   width: auto;
@@ -218,7 +241,8 @@ section:after {
 }
 
 .slideshow-thumbnails {
-  cursor: pointer;
+  /*width: 90%;*/
+  margin-left: 23%;
 }
 
 .page-header {

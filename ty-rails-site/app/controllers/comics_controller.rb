@@ -44,6 +44,8 @@ class ComicsController < ApplicationController
   end
 
   def destroy
+    @comic = Comic.find params[:id]
+    @comic.destroy
   end
 
   private

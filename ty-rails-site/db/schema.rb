@@ -22,11 +22,11 @@ ActiveRecord::Schema.define(version: 20170218040440) do
   end
 
   create_table "images", force: :cascade do |t|
-    t.integer  "type"
+    t.integer  "image_type"
     t.string   "imageable_type"
     t.integer  "imageable_id"
     t.integer  "page"
-    t.string   "path"
+    t.string   "uploaded_image"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end
@@ -35,10 +35,11 @@ ActiveRecord::Schema.define(version: 20170218040440) do
     t.string   "title"
     t.integer  "comic_id"
     t.string   "synopsis"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "paypal_link"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "subtitle"
-    t.string   "type"
+    t.string   "issue_type"
   end
 
   create_table "posts", force: :cascade do |t|

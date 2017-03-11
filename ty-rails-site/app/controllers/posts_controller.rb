@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post = Post.find id: params[:id]
+    @post = Post.find params[:id]
     if @post.update(params)
       redirect_to "/posts/#{@post.id}"
     else
@@ -37,5 +37,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    @post = Post.find params[:id]
+    @post.destroy
   end
 end

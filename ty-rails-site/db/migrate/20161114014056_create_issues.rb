@@ -4,6 +4,7 @@ class CreateIssues < ActiveRecord::Migration
       t.string :name
       t.integer :comic_id
       t.string :synopsis
+      t.string :paypal_link
 
       t.timestamps null: false
     end

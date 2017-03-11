@@ -307,11 +307,11 @@ section:after {
   font-size: 30px;
 }
 
-.new-post-form {
+.new-form {
   list-style: none;
 }
 
-.new-post-form textarea {
+.new-form textarea {
   width: 90%;
   height: auto;
   min-height: 70px;

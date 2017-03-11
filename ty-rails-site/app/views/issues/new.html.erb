@@ -1,0 +1,26 @@
+<section>
+  <%= form_tag"/issues", method: :post do %>
+    <ul class="new-issue-form">
+      <li>
+        <%= label_tag :title, "Issue title:" %>
+        <%= text_area_tag :title %>
+      </li>
+      <li>
+        <%= label_tag :subtitle, "Issue subtitle:" %>
+        <%= text_area_tag :subtitle %>
+      </li>
+      <!-- this should be a drop-down since it's an enum -->
+      <li class="post-text">
+        <%= label_tag :type, "Issue type:" %>
+        <%= text_area_tag :type %>
+      </li>
+      <li class="post-text">
+        <%= label_tag :synopsis, "Issue type:" %>
+        <%= text_area_tag :synopsis %>
+      </li>
+      <li>
+        <%= submit_tag "Submit" %>
+      </li>
+    </ul>
+  <% end %>
+</section>

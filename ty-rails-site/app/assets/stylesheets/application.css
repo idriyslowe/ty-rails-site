@@ -323,3 +323,7 @@ section:after {
 .post-text textarea {
   min-height: 500px;
 }
+
+.shop-image {
+  padding: 3%;
+}

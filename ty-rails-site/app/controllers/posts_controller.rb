@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
+    @post = Post.find params[:id]
     @header_image = "ty-home-image.jpg"
   end
 
@@ -25,5 +25,17 @@ class PostsController < ApplicationController
     else
       redirect_to '/'
     end
+  end
+
+  def update
+    @post = Post.find id: params[:id]
+    if @post.update(params)
+      redirect_to "/posts/#{@post.id}"
+    else
+      redirect_to '/'
+    end
+  end
+
+  def destroy
   end
 end

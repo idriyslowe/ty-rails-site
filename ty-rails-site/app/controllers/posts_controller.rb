@@ -18,6 +18,15 @@ class PostsController < ApplicationController
     @header_image = "ty-home-image.jpg"
   end
 
+  def edit
+    # TODO: SET UP EDITING HERE TOO
+    @post = Post.find params[:id]
+  end
+
+  def edit_about_page
+    # TODO: HOOK UP A WAY TO EDIT THIS PAGE. CURRENT HARD-CODED
+  end
+
   def create
     @post = Post.new(heading: params[:heading], text: params[:text])
     if @post.save

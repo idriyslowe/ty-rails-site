@@ -29,16 +29,16 @@ issues = Issue.create!([
   {title: "Issue 2", comic_id: 6, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: 'trade', paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
   {title: "Issue 3", comic_id: 6, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: 'trade', paypal_link: 'https://www.paypal.com/cgi-bin/webscr'}
 ])
-images = Image.create!([
-  {uploaded_image: Pathname.new('public/uploads/issues/buzzme.jpg').open, image_type: 'cover', page: nil},
-  {uploaded_image: Pathname.new('public/uploads/issues/cockyme.jpg').open, image_type: 'page', page: 1},
-  {uploaded_image: Pathname.new('public/uploads/issues/buzzme.jpg').open, image_type: 'page', page: 4},
-  {uploaded_image: Pathname.new('public/uploads/issues/me-boom.jpg').open, image_type: 'page', page: 7}
-])
 
-2.times do
+files = [
+  Pathname.new('public/uploads/issues/buzzme.jpg').open,
+  Pathname.new('public/uploads/issues/cockyme.jpg').open,
+  Pathname.new('public/uploads/issues/me-boom.jpg').open
+]
+
+4.times do
   issues.each do |issue|
-    current_image = images.sample
+    current_image = Image.create({uploaded_image: files.sample, image_type: 'cover', page: nil})
     issue.images << current_image
   end
 end

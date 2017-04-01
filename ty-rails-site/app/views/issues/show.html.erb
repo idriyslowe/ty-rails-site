@@ -13,11 +13,11 @@
     <div class="carousel-inner" role="listbox">
       <div class="item active">
       <% @issue.images.drop(1).each_with_index do |image, i| %>
-        <%= image_tag(image.uploaded_image, :class => "slideshow-thumbnails", :onclick => "currentDiv(#{i})" ) %>
+        <%= image_tag(image.uploaded_image, :class => "slideshow-thumbnails", :onclick => "currentDiv(#{@counter})" ) %>
       </div>
 
       <div class="item">
-        <%= image_tag(image.uploaded_image, :class => "slideshow-thumbnails", :onclick => "currentDiv(#{i})" ) %>
+        <%= image_tag(image.uploaded_image, :class => "slideshow-thumbnails", :onclick => "currentDiv(#{@counter})" ) %>
       <% end %>
       </div>
 

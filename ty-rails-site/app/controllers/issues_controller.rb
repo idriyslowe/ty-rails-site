@@ -16,7 +16,6 @@ class IssuesController < ApplicationController
     @issue = Issue.new(issues_params)
     @issue.images.build
     if @issue.save && @issue.images.any?
-      debugger
       redirect_to "/issues/#{@issue.id}"
     else
       redirect_to "/"

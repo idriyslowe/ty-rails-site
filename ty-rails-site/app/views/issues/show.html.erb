@@ -2,24 +2,23 @@
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <% counter = 1 %>
-      <% 4.times do %>
+      <% @issue.images.each do |image| %>
         <!-- <li data-target="#carousel-example-generic" data-slide-to="#{counter}" class="active"></li> -->
-        <li data-target="#carousel-example-generic" data-slide-to="#{counter}"></li>
-      <% counter += 1 %>
+        <%= @counter = image.id %>
+        <li data-target="#carousel-example-generic" data-slide-to="#{@counter}"></li>
       <% end %>
     </ol>
     <!-- DIVS BELOW SWITCH ACTIVE STATES -->
     <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <%= image_tag('/uploads/comic/series_image/simonpreview1.jpg', :class => "slideshow-thumbnails", :onclick => "currentDiv(#{counter})" ) %>
+        <%= image_tag(@issue.images.first.uploaded_image, :class => "slideshow-thumbnails", :onclick => "currentDiv(#{@counter})" ) %>
         <div class="carousel-caption">
           <h4><%=@comic.name%></h4>
         </div>
       </div>
       <div class="item">
-        <%= image_tag('/uploads/comic/series_image/Store_Victus1.jpg', :class => "slideshow-thumbnails", :onclick => "currentDiv(#{counter})" ) %>
+        <%= image_tag(@issue.images.first.uploaded_image, :class => "slideshow-thumbnails", :onclick => "currentDiv(#{@counter})" ) %>
         <div class="carousel-caption">
           <h4><%=@comic.name%></h4>
         </div>

@@ -6,7 +6,8 @@ class Issue < ActiveRecord::Base
 
   validates_presence_of :comic_id, on: :create
 
-  accepts_nested_attributes_for :images, :comic
+  accepts_nested_attributes_for :images
+  accepts_nested_attributes_for :comic
 
   def cover_image
     images.where(image_type: 'cover').first

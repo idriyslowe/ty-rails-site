@@ -1,8 +1,34 @@
+# files = [
+#   Pathname.new('public/uploads/issues/buzzme.jpg').open,
+#   Pathname.new('public/uploads/issues/cockyme.jpg').open,
+#   Pathname.new('public/uploads/issues/me-boom.jpg').open
+# ]
+files = [
+  'public/uploads/issues/buzzme.jpg',
+  'public/uploads/issues/cockyme.jpg',
+  'public/uploads/issues/me-boom.jpg'
+]
 comics = Comic.create!([
-  {name: "Victus", series_image: Pathname.new("public/uploads/comic/series_image/Store_Victus1.jpg").open, description: "In a timeless city, a young thief named Isaac struggles to connect with a beautiful girl.  The bartering inhabitants are challenged by the public speeches of a great thinker, while a mysterious man constructs a machine powered by stolen religious relics."},
-  {name: "Speculative Relationships", series_image: Pathname.new("public/uploads/comic/series_image/abouttyrell.jpg").open, description: "In the mid-twentieth century, romance was most popular genre in comics. Comic publishers produced dozens of titles throughout the 1950's and 60's, and many of the mediums top artistic talents worked in romance comics. For a number of reasons, romance comics all but died out.\n\nEditors Tyrell Cannon and Scott Kroll see Speculative Relationships as way of reviving romance comics. They sought to breathe new life into the genre by mixing in some science fiction! The artists contributing to the anthology created work that is alive, vital, and unlike anything you've seen before."},
-  {name: "Simon", series_image: Pathname.new("public/uploads/comic/series_image/simonpreview1.jpg").open, description: "Your mind is officially bent and then BLOWN!"},
-  {name: "Gary", series_image: Pathname.new("public/uploads/comic/series_image/gary_preview_2.jpg").open, description: "This work is loosely based on the green river killer, who was responsible for the deaths of over 70 women from 1982-2001.  Though based on true events, none of the information contained within should be considered facts about any person living or dead."}
+  {
+    name: "Victus",
+    series_image: Pathname.new("public/uploads/comic/series_image/Store_Victus1.jpg").open,
+    description: "In a timeless city, a young thief named Isaac struggles to connect with a beautiful girl.  The bartering inhabitants are challenged by the public speeches of a great thinker, while a mysterious man constructs a machine powered by stolen religious relics."
+  },
+  {
+    name: "Speculative Relationships",
+    series_image: Pathname.new("public/uploads/comic/series_image/abouttyrell.jpg").open,
+    description: "In the mid-twentieth century, romance was most popular genre in comics. Comic publishers produced dozens of titles throughout the 1950's and 60's, and many of the mediums top artistic talents worked in romance comics. For a number of reasons, romance comics all but died out.\n\nEditors Tyrell Cannon and Scott Kroll see Speculative Relationships as way of reviving romance comics. They sought to breathe new life into the genre by mixing in some science fiction! The artists contributing to the anthology created work that is alive, vital, and unlike anything you've seen before."
+  },
+  {
+    name: "Simon",
+    series_image: Pathname.new("public/uploads/comic/series_image/simonpreview1.jpg").open,
+    description: "Your mind is officially bent and then BLOWN!"
+  },
+  {
+    name: "Gary",
+    series_image: Pathname.new("public/uploads/comic/series_image/gary_preview_2.jpg").open,
+    description: "This work is loosely based on the green river killer, who was responsible for the deaths of over 70 women from 1982-2001.  Though based on true events, none of the information contained within should be considered facts about any person living or dead."
+  }
 ])
 Post.create!([
   {heading: "This is New!", text: "Cliche artisan tilde, master cleanse mustache iPhone tumblr gochujang gentrify fanny pack beard fingerstache heirloom unicorn pok pok. Migas actually woke lyft vexillologist. Quinoa banjo paleo, craft beer gentrify seitan asymmetrical iceland pop-up crucifix fap vegan keffiyeh. Tumeric ramps four loko, narwhal air plant organic helvetica +1 lo-fi church-key man braid meh williamsburg. Brooklyn actually cardigan bushwick iceland. +1 affogato master cleanse photo booth. Pug farm-to-table butcher wayfarers.  +1 meditation fap dreamcatcher art party schlitz tacos vaporware, marfa edison bulb. Kickstarter green juice kale chips hella, williamsburg helvetica unicorn umami portland cold-pressed hot chicken vice scenester raclette narwhal. Bushwick keffiyeh butcher glossier, +1 chambray 90's paleo fingerstache tousled chicharrones taxidermy woke lumbersexual swag. Aesthetic next level mumblecore, pug selvage small batch bitters trust fund poutine. Salvia bitters single-origin coffee irony swag yuccie, enamel pin jianbing. Butcher flexitarian VHS, chicharrones hashtag thundercats beard la croix af forage migas. 3 wolf moon organic vexillologist, edison bulb 90's intelligentsia meggings taxidermy."},
@@ -10,34 +36,44 @@ Post.create!([
   {heading: "This is the second one...", text: "\r\nA horizontal rule follows.\r\n\r\n***\r\n\r\nHere's a definition list:\r\n\r\napples\r\n  : Good for making applesauce.\r\noranges\r\n  : Citrus!\r\ntomatoes\r\n  : There's no \"e\" in tomatoe.\r\n\r\nAgain, text is indented 4 spaces. (Put a blank line between each\r\nterm/definition pair to spread things out more.)\r\n\r\nHere's a \"line block\":\r\n\r\n| Line one\r\n|   Line too\r\n| Line tree\r\n\r\nand images can be specified like so:\r\n\r\n![example image](/assets/ty-home-image.jpg \"An exemplary image\")"}
 ])
 issues = Issue.create([
-  {title: "Issue 1", comic_id: 1, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 2", comic_id: 1, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 3", comic_id: 1, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 1", comic_id: 2, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 2", comic_id: 2, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 3", comic_id: 2, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 1", comic_id: 3, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 2", comic_id: 3, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 3", comic_id: 3, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 1", comic_id: 4, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 2", comic_id: 4, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 3", comic_id: 4, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 1", comic_id: 3, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 2", comic_id: 3, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 3", comic_id: 3, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 1", comic_id: 2, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 2", comic_id: 2, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'},
-  {title: "Issue 3", comic_id: 2, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr'}
+  {title: "Issue 1", comic_id: 1, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}
+    ]},
+  {title: "Issue 2", comic_id: 1, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}
+    ]},
+  {title: "Issue 3", comic_id: 1, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 1", comic_id: 2, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 2", comic_id: 2, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 3", comic_id: 2, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 1", comic_id: 3, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 2", comic_id: 3, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 3", comic_id: 3, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 1", comic_id: 4, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 2", comic_id: 4, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 3", comic_id: 4, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 1", comic_id: 3, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :issue, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 2", comic_id: 3, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 3", comic_id: 3, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 1", comic_id: 2, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 2", comic_id: 2, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+  {title: "Issue 3", comic_id: 2, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]}
 ])
-# files = [
-#   Pathname.new('public/uploads/issues/buzzme.jpg').open,
-#   Pathname.new('public/uploads/issues/cockyme.jpg').open,
-#   Pathname.new('public/uploads/issues/me-boom.jpg').open
-# ]
-# 4.times do
-#   issues.each do |issue|
-#     current_image = Image.create!({uploaded_image: files.sample, image_type: 'cover', page: nil})
-#     issue.images << current_image
-#     issue.comic = comics.sample
-#   end
-# end

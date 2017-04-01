@@ -1,12 +1,12 @@
-# files = [
-#   Pathname.new('public/uploads/issues/buzzme.jpg').open,
-#   Pathname.new('public/uploads/issues/cockyme.jpg').open,
-#   Pathname.new('public/uploads/issues/me-boom.jpg').open
-# ]
 files = [
-  'public/uploads/issues/buzzme.jpg',
-  'public/uploads/issues/cockyme.jpg',
-  'public/uploads/issues/me-boom.jpg'
+  'public/uploads/issues/gary_chapter_one.jpg',
+  'public/uploads/issues/store_GARY_2.jpg',
+  'public/uploads/issues/store_GARY_3.jpg',
+  'public/uploads/issues/store_simonsquare.png',
+  'public/uploads/issues/Victus1_Cover_prev.jpg',
+  'public/uploads/issues/Victus3_cover-prev.jpg',
+  'public/uploads/issues/victus4-frontcoverBIG.jpg',
+  'public/uploads/issues/Victus_2-Cover-prev.jpg',
 ]
 comics = Comic.create!([
   {
@@ -38,14 +38,23 @@ Post.create!([
 issues = Issue.create([
   {title: "Issue 1", comic_id: 1, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
       {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
       {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}
     ]},
   {title: "Issue 2", comic_id: 1, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
       {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
       {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}
     ]},
   {title: "Issue 3", comic_id: 1, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
-      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+    ]},
   {title: "Issue 1", comic_id: 2, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
       {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},
   {title: "Issue 2", comic_id: 2, synopsis: "This is the synopsis of issue 2", subtitle: "Subtitle of issue 2", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [

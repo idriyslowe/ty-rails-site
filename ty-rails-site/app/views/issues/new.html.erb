@@ -1,45 +1,51 @@
 <section>
-  <%= form_tag"/issues", method: :post, controller: 'issues', action: 'file', multipart: true do %>
+  <%= form_for @issue, method: :post, controller: 'issues', action: 'file', :html => { multipart: true } do |f| %>
     <ul class="new-form">
       <li>
-        <%= label_tag :title, "Issue title:" %>
-        <%= text_area_tag :title %>
+        <%= f.label :comic_id, "Comic ID:" %>
+        <%= f.text_field :comic_id %>
       </li>
       <li>
-        <%= label_tag :subtitle, "Issue subtitle:" %>
-        <%= text_area_tag :subtitle %>
+        <%= f.label :title, "Issue title:" %>
+        <%= f.text_field :title %>
+      </li>
+      <li>
+        <%= f.label :subtitle, "Issue subtitle:" %>
+        <%= f.text_field :subtitle %>
       </li>
       <!-- THIS IS A DROP DOWN SINCE IT'S AN ENUM -->
       <li>
-        <%= label_tag :issue_type, "Issue type:" %>
-        <%= text_area_tag :issue_type %>
+        <%= f.label :issue_type, "Issue type:" %>
+        <%= f.text_field :issue_type %>
       </li>
       <li class="post-text">
-        <%= label_tag :synopsis, "Synopsis:" %>
-        <%= text_area_tag :synopsis %>
+        <%= f.label :synopsis, "Synopsis:" %>
+        <%= f.text_field :synopsis %>
       </li>
       <li>
-        <%= label_tag :paypal_link, "Paypal Url:" %>
-        <%= text_area_tag :paypal_link %>
+        <%= f.label :paypal_link, "Paypal Url:" %>
+        <%= f.text_field :paypal_link %>
       </li>
       <!-- IMAGES UPLOAD BELOW. ADD FIELDS FOR IMAGE? -->
-      <li>
-        <%= label_tag :uploaded_image, "Image:" %>
-        <%= file_field_tag :uploaded_image %>
-      </li>
-      <!-- THIS IS A DROP DOWN SINCE IT'S AN ENUM -->
-      <li class="post-text">
-        <%= label_tag :image_type, "Image type:" %>
-        <%= text_area_tag :image_type %>
-      </li>
-      <!-- THIS FIELD SHOULD BE A DROPDOWN OF NUMBERS -->
-      <li class="post-text">
-        <%= label_tag :page, "Page (if any):" %>
-        <%= text_area_tag :page %>
-      </li>
-      <li>
-        <%= submit_tag "Submit" %>
-      </li>
+      <%= f.fields_for :images do |images_form| %>
+        <li>
+          <%= images_form.label :uploaded_image, "Image:" %>
+          <%= images_form.file_field :uploaded_image %>
+        </li>
+        <!-- THIS IS A DROP DOWN SINCE IT'S AN ENUM -->
+        <li class="post-_text">
+          <%= images_form.label :image_type, "Image type:" %>
+          <%= images_form.text_field :image_type %>
+        </li>
+        <!-- THIS FIELD SHOULD BE A DROPDOWN OF NUMBERS -->
+        <li class="post-_text_field">
+          <%= images_form.label :page, "Page (if any):" %>
+          <%= images_form.text_field :page %>
+        </li>
+        <li>
+          <%= submit_tag "Submit" %>
+        </li>
+      <% end %>
     </ul>
   <% end %>
 </section>

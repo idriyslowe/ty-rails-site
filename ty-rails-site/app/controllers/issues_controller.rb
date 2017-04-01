@@ -2,18 +2,21 @@ class IssuesController < ApplicationController
   def show
     @issue = Issue.find params[:id]
     @comic = @issue.comic
-    # @header_image = @issue.image.where(type: "cover")
+    @header_image = @issue.cover_image
     @header_image = "ty-home-image.jpg"
   end
 
   def new
+    @header_image = "ty-home-image.jpg"
     @issue = Issue.new
+    @issue.images.build
   end
 
   def create
     @issue = Issue.new(issues_params)
-    # @issue.images << create_nested_image
-    if @issue.save
+    @issue.images.build
+    if @issue.save && @issue.images.any?
+      debugger
       redirect_to "/issues/#{@issue.id}"
     else
       redirect_to "/"
@@ -22,10 +25,12 @@ class IssuesController < ApplicationController
 
   def edit
     @issue = Issue.find params[:id]
+    @header_image = @issue.cover_image
   end
 
   def update
     @issue = Issue.find params[:id]
+    @issue.comic_id = issues_params[:comic_id] || @issue.comic.id
     if @issue.save
       redirect_to "/issues/#{@issue.id}"
     else
@@ -41,17 +46,18 @@ class IssuesController < ApplicationController
   private
 
   def issues_params
-    params.permit(
-      :title, :comic_id, :synopsis, :subtitle, :type, :paypal_link
-    )
+    params.require(:issue).permit(
+      :title, :comic_id, :synopsis, :subtitle, :issue_type, :paypal_link, images_attributes: [
+        :image_type, :page, :uploaded_image
+      ])
   end
 
   def image_params
-    params.permit(:uploaded_image, :image_type, :page)
+    issues_params(:id, :uploaded_image, :image_type, :page)
   end
 # add multiple image upload. loop through images and do this below method
   def create_nested_image
-    issue_image = Image.create(image_params)
+    issue_image = Image.create!(image_params)
     issue_image.imageable = @issue
   end
 end

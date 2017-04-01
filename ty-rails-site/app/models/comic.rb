@@ -4,7 +4,6 @@ class Comic < ActiveRecord::Base
   has_many :issues, inverse_of: :comic, dependent: :destroy
 
   validates :name, presence: true
-  # validates_presence_of :series_image
 
   mount_uploader :series_image, SeriesImageUploader
 

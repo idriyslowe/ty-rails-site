@@ -6,7 +6,6 @@ class ComicsController < ApplicationController
 
   def show
     @comic = Comic.find params[:id]
-    @latest_issue = @comic.issues.last
     @header_image = @comic.series_image
   end
 

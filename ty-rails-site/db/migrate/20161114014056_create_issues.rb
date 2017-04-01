@@ -5,6 +5,8 @@ class CreateIssues < ActiveRecord::Migration
       t.integer :comic_id
       t.string :synopsis
       t.string :paypal_link
+      t.integer :year
+      t.string :details
 
       t.timestamps null: false
     end

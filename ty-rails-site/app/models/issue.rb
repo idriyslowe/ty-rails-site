@@ -2,7 +2,13 @@ class Issue < ActiveRecord::Base
   belongs_to :comic
   has_many :images, as: :imageable
 
-  enum type: [ :trade, :issue ]
+  enum issue_type: [ :trade, :issue ]
 
-  accepts_nested_attributes_for :images
+  validates_presence_of :comic_id, on: :create
+
+  accepts_nested_attributes_for :images, :comic
+
+  def cover_image
+    images.where(image_type: 'cover').first
+  end
 end

@@ -2,8 +2,7 @@ class IssuesController < ApplicationController
   def show
     @issue = Issue.find params[:id]
     @comic = @issue.comic
-    @header_image = @issue.cover_image
-    @header_image = "ty-home-image.jpg"
+    @header_image = @issue.images.first.uploaded_image
   end
 
   def new
@@ -24,7 +23,7 @@ class IssuesController < ApplicationController
 
   def edit
     @issue = Issue.find params[:id]
-    @header_image = @issue.cover_image
+    @header_image = @issue.images.first.uploaded_image
   end
 
   def update

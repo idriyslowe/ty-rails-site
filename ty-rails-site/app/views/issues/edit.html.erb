@@ -12,7 +12,7 @@
       <!-- this should be a drop-down since it's an enum -->
       <li class="post-text">
         <%= label_tag :issue_type, "Issue type:" %>
-        <%= text_area_tag :issue_type, @issue.issue_type %>
+        <%= select_tag :issue_type, options_for_select(Issue.issue_types) %>
       </li>
       <li class="post-text">
         <%= label_tag :synopsis, "Synopsis:" %>
@@ -22,15 +22,13 @@
         <%= label_tag :paypal_link, "Paypal Url:" %>
         <%= text_area_tag :paypal_link, @issue.paypal_link %>
       </li>
-      <!-- IMAGES UPLOAD BELOW. ADD FIELDS FOR IMAGE? -->
       <li>
         <%= label_tag :uploaded_image, "Image:" %>
         <%= file_field_tag :uploaded_image %>
       </li>
-      <!-- THIS IS A DROP DOWN SINCE IT'S AN ENUM -->
       <li class="post-text">
         <%= label_tag :image_type, "Image type:" %>
-        <%= text_area_tag :image_type %>
+        <%= select_tag :image_type, options_for_select(Image.image_types) %>
       </li>
       <!-- THIS FIELD SHOULD BE A DROPDOWN OF NUMBERS -->
       <li class="post-text">

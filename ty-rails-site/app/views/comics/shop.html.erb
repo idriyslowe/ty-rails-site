@@ -1,21 +1,30 @@
 <section class="main-section container-fluid">
+  <h1>COMICS</h1>
   <div class="comics-shop-span row">
     <% @comics.each do |series| %>
+      <h4><%= series.name %></h4>
+      <hr>
       <% series.issues.each do |issue| %>
-        <div class="comics-well col-lg-6">
-          <%= link_to "comics/#{series.id}" do %>
-          <%= image_tag( "#{series.series_image}", :class => 'shop-image') %>
+          <% issue.images.each do |image| %>
+            <div class="comics-well col-lg-6">
+              <%= link_to "/issues/#{issue.id}" do %>
+                <%= simple_format(issue.interpret_shop_overlay_text, :class => "click-for-details" ) %>
+                <%= image_tag( "#{image.uploaded_image}", :class => 'shop-image') %>
+              <% end %>
+              <!-- INSERT GENERATED BUTTON HTML HERE -->
+              <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="FPL3WNYW4NF9S">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              </form>
+            </div>
           <% end %>
-          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="FPL3WNYW4NF9S">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-          </form>
-
-        </div>
       <% end %>
       <div class="clearfix visible-lg-block"></div>
     <% end %>
+    <div class="clearfix visible-lg-block"></div>
+    <h1>PORTFOLIO</h1>
+    <hr>
   </div>
-<!-- PRINTS: COPY AND ADJUST TEMPLATE FROM ABOVE FOR EACH TYPE OF ITEM-->
+<!-- PRINTS: COPY AND ADJUST TEMPLATE FROM ABOVE FOR EACH TYPE OF ITEM. LINK TO PORTFOLIO SHOW-->
 </section>

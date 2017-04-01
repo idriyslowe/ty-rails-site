@@ -16,7 +16,7 @@ comics = Comic.create!([
   },
   {
     name: "Speculative Relationships",
-    series_image: Pathname.new("public/uploads/comic/series_image/abouttyrell.jpg").open,
+    series_image: Pathname.new("public/uploads/comic/series_image/SpecRel-FrontCover-web.jpg").open,
     description: "In the mid-twentieth century, romance was most popular genre in comics. Comic publishers produced dozens of titles throughout the 1950's and 60's, and many of the mediums top artistic talents worked in romance comics. For a number of reasons, romance comics all but died out.\n\nEditors Tyrell Cannon and Scott Kroll see Speculative Relationships as way of reviving romance comics. They sought to breathe new life into the genre by mixing in some science fiction! The artists contributing to the anthology created work that is alive, vital, and unlike anything you've seen before."
   },
   {
@@ -50,10 +50,10 @@ issues = Issue.create([
       {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}
     ]},
   {title: "Issue 3", comic_id: 1, synopsis: "This is the synopsis of issue 3", subtitle: "Subtitle of issue 3", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
+      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
       {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}
-      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
-      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
-      {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil},
     ]},
   {title: "Issue 1", comic_id: 2, synopsis: "This is the synopsis of issue 1", subtitle: "Subtitle of issue 1", issue_type: :trade, paypal_link: 'https://www.paypal.com/cgi-bin/webscr', images_attributes: [
       {uploaded_image: Pathname.new(files.sample).open, image_type: 'cover', page: nil}]},

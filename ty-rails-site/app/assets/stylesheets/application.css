@@ -60,12 +60,14 @@ footer {
   text-align: center;
   height: 5%;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 footer p {
   display: inline;
-  padding: 10%;
+  padding-left: 15%;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 section {
@@ -185,6 +187,10 @@ section:after {
   visibility: visible;
 }
 
+.comics-well:hover .click-for-details {
+  visibility: visible;
+}
+
 .comics-well img {
   height: 400px;
   width: auto;
@@ -198,6 +204,17 @@ section:after {
   right: 23%;
   top: 40%;
   font-size: 2em;
+}
+
+.click-for-details {
+  visibility: hidden;
+  color: black;
+  opacity: 0.7;
+  position: absolute;
+  right: 30%;
+  top: 30%;
+  font-size: 2em;
+  max-width: 40%;
 }
 
 .comics-modal {
@@ -252,7 +269,7 @@ section:after {
 }
 
 .slideshow-thumbnails {
-  margin-left: 32%;
+  margin-left: 33%;
 }
 
 .page-header {
@@ -321,7 +338,7 @@ section:after {
   list-style: none;
 }
 
-.new-form textarea {
+.new-form textarea, input[type=text] {
   width: 90%;
   height: auto;
   min-height: 70px;
@@ -329,11 +346,9 @@ section:after {
   border-style: solid;
   border-width: 3px;
 }
-
-.post-text textarea {
+.post-text textarea, input[type=text] {
   min-height: 500px;
 }
-
 .shop-image {
   padding: 3%;
 }
@@ -356,4 +371,12 @@ section:after {
   font-size: 25px;
   color: black;
 }
-
+.bottom-nav {
+  height: 50px;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.bottom-nav h3 {
+  width: 50%;
+  display: inline;
+}

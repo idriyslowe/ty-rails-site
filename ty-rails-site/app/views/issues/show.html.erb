@@ -19,7 +19,6 @@
       <div class="item">
         <%= image_tag(image.uploaded_image, :class => "slideshow-thumbnails", :onclick => "currentDiv(#{@counter})" ) %>
       </div>
-      <%= i %>
       <% end %>
 
       <div class="carousel-caption">
@@ -38,14 +37,9 @@
     </a>
     </div>
     <hr>
-    <div>
-      <%= link_to '/shops' do %>
-        <p>STORE</p>
-      <% end %>
-    </div>
-    <div>
-      <%= link_to '/comics' do %>
-        <p>BACK TO COMICS</p>
-      <% end %>
-    </div>
+    <%= link_to '/comics' do %>
+      <div class="bottom-nav">
+        <h3>BACK TO COMICS</h3>
+      </div>
+    <% end %>
 </section>

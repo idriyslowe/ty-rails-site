@@ -12,4 +12,12 @@ class Issue < ActiveRecord::Base
   def cover_image
     images.where(image_type: 'cover').first
   end
+
+  def interpret_shop_overlay_text
+    overlay_text.gsub(/(?:\n\r?|\r\n?)/, '<br>')
+  end
+
+  def overlay_text
+    "#{title}\nClick For Product Images\n#{details}\n#{year}"
+  end
 end

@@ -33,6 +33,6 @@ Rails.application.routes.draw do
     resources :images, except: [:index]
   end
 
-  resources :portfolio_items
+  resources :portfolio_items, except: [:show]
 
 end

@@ -23,7 +23,7 @@
 
             <%= link_to "/issues/#{issue.id}" do %>
               <div class="comics-modal modal-body">
-                <%= image_tag( @comic.series_image ) %>
+                <%= image_tag( issue.images.first.uploaded_image ) %>
               </div>
             <% end %>
 

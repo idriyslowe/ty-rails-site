@@ -13,10 +13,18 @@
         <%= f.label :subtitle, "Issue subtitle:" %>
         <%= f.text_field :subtitle %>
       </li>
+      <li>
+        <%= f.label :detail, "Detail:" %>
+        <%= f.text_field :detail %>
+      </li>
       <!-- THIS IS A DROP DOWN SINCE IT'S AN ENUM -->
       <li>
         <%= f.label :issue_type, "Issue type:" %>
         <%= f.text_field :issue_type %>
+      </li>
+      <li>
+        <%= f.label :year, "Year:" %>
+        <%= f.text_field :year %>
       </li>
       <li class="post-text">
         <%= f.label :synopsis, "Synopsis:" %>

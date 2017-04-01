@@ -46,7 +46,7 @@ class IssuesController < ApplicationController
 
   def issues_params
     params.require(:issue).permit(
-      :title, :comic_id, :synopsis, :subtitle, :issue_type, :paypal_link, images_attributes: [
+      :title, :comic_id, :synopsis, :subtitle, :issue_type, :paypal_link, :year, :details, images_attributes: [
         :image_type, :page, :uploaded_image
       ])
   end
@@ -60,3 +60,4 @@ class IssuesController < ApplicationController
     issue_image.imageable = @issue
   end
 end
+

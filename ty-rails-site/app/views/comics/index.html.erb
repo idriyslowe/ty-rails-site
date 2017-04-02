@@ -1,11 +1,11 @@
 <section class="main-section container-fluid">
-  <div class="comics-index-span row">
+  <div class="comics-index-span row text-center">
     <% @comics.each do |series| %>
-      <%= link_to "/comics/#{series.id}" do %>
-        <div class="comics-well col-lg-6">
-          <%= image_tag( "#{series.series_image}" ) %>
-        </div>
-      <% end %>
+      <div class="comics-well col-lg-6">
+        <%= link_to "/comics/#{series.id}" do %>
+            <%= image_tag( "#{series.series_image}" ) %>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </section>

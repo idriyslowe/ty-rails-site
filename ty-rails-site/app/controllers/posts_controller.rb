@@ -1,9 +1,11 @@
 class PostsController < ApplicationController
-  def about
-    @header_image = "ty-home-image.jpg"
-  end
 
   def index
+    @header_image = "ty-home-image.jpg"
+    @posts = Post.first(10)
+  end
+
+  def archive
     @header_image = "ty-home-image.jpg"
     @posts = Post.all
   end

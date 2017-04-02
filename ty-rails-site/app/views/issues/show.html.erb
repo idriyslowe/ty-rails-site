@@ -1,4 +1,7 @@
 <section class="main-section container-fluid">
+  <div class="show-header">
+    <h1><%= @issue.title.upcase %></h1>
+  </div>
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -20,10 +23,6 @@
         <%= image_tag(image.uploaded_image, :class => "slideshow-thumbnails", :onclick => "currentDiv(#{@counter})" ) %>
       </div>
       <% end %>
-
-      <div class="carousel-caption">
-        <h4><%=@comic.name%></h4>
-      </div>
     </div>
 
     <!-- Controls -->
@@ -39,7 +38,8 @@
     <hr>
     <%= link_to '/comics' do %>
       <div class="bottom-nav">
-        <h3>BACK TO COMICS</h3>
+        <h3>BACK TO <%= @issue.comic.name.upcase %></h3>
       </div>
     <% end %>
 </section>
+<!-- SLIDESHOW CAPTION SHOULD BE IMAGE NAME -->

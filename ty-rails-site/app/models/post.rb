@@ -1,3 +1,4 @@
 class Post < ActiveRecord::Base
-  has_many :images, as: :imageable
+  require 'carrierwave/orm/activerecord'
+  mount_uploader :image, PostImageUploader
 end

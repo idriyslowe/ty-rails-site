@@ -18,6 +18,6 @@ class Issue < ActiveRecord::Base
   end
 
   def overlay_text
-    "#{title}\nClick For Product Images\n#{details}\n#{year}"
+    "#{title}\n#{year}\n#{details}\n$#{price}\nClick For Preview"
   end
 end

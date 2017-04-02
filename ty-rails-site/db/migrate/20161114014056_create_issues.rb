@@ -7,6 +7,7 @@ class CreateIssues < ActiveRecord::Migration
       t.string :paypal_link
       t.integer :year
       t.string :details
+      t.string :price
 
       t.timestamps null: false
     end

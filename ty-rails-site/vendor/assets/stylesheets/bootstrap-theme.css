@@ -507,6 +507,7 @@ fieldset[disabled] .btn-danger.active {
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
+  /*TODO: CENTER THE IMAGE!;*/
   text-shadow: 0 -1px 0 #286090;
   background-image: -webkit-linear-gradient(top, #337ab7 0%, #2b669a 100%);
   background-image:      -o-linear-gradient(top, #337ab7 0%, #2b669a 100%);

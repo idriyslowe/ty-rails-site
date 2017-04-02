@@ -5,6 +5,7 @@
       <h4><%= series.name %></h4>
       <hr>
       <% series.issues.each do |issue| %>
+      <div class="comics-index-span row">
           <% issue.images.each do |image| %>
             <div class="comics-well col-lg-6">
               <%= link_to "/issues/#{issue.id}" do %>
@@ -19,12 +20,12 @@
               </form>
             </div>
           <% end %>
+        </div>
       <% end %>
       <div class="clearfix visible-lg-block"></div>
     <% end %>
     <div class="clearfix visible-lg-block"></div>
-    <h1>PORTFOLIO</h1>
+    <h1>PRINTS</h1>
     <hr>
   </div>
-<!-- PRINTS: COPY AND ADJUST TEMPLATE FROM ABOVE FOR EACH TYPE OF ITEM. LINK TO PORTFOLIO SHOW-->
 </section>

@@ -10,28 +10,10 @@
   <div class="comics-index-span row">
     <% @comic.issues.each do |issue| %>
       <div class="comics-well col-lg-6" data-toggle="modal" data-target="#myModal-<%=issue.id%>">
-        <p class="click-for-preview">Click For Preview</p>
-        <%= image_tag( issue.images.first.uploaded_image ) %>
-      </div>
-
-      <div class="modal fade" id="myModal-<%=issue.id%>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel"><%=issue.title%></h4>
-            </div>
-
-            <%= link_to "/issues/#{issue.id}" do %>
-              <div class="comics-modal modal-body">
-                <%= image_tag( issue.images.first.uploaded_image ) %>
-              </div>
-            <% end %>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
+        <%= link_to "/issues/#{issue.id}" do %>
+          <p class="click-for-preview">Click For Preview</p>
+          <%= image_tag( issue.images.first.uploaded_image ) %>
+        <% end %>
       </div>
     <% end %>
   </div>

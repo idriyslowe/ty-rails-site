@@ -5,8 +5,8 @@ Rails.application.routes.draw do
 # TODO: REFACTOR WITH RESOURCES
 
   get '/posts/index' => 'posts#index'
+  get '/posts/archive' => 'posts#archive'
   get '/posts/new' => 'posts#new'
-  get '/posts/about' => 'posts#about'
   post '/posts' => 'posts#create'
   get '/posts/:id' => 'posts#show'
   get '/posts/:id/edit' => 'posts#edit'
@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   get '/issues/:id/edit' => 'issues#edit'
   patch '/issues/:id' => 'issues#update'
   delete '/issues/:id' => 'issues#destroy'
+
+  resources :abouts, except: [:show]
 
   resources :issues do
     resources :images, except: [:index]

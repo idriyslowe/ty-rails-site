@@ -11,7 +11,7 @@
 <body>
 
   <div class="header-wrapper container-fluid">
-    <div>
+    <div class="col-lg-4">
       <h1 class="index-link"><%= link_to "COMICS", "/comics" %></h1>
       <h1 class="index-link"><%= link_to "SHOP", "/comics/shop" %></h1>
       <h1 class="index-link"><%= link_to "NEWS", "/posts/index" %></h1>
@@ -19,13 +19,13 @@
     </div>
 
     <%= link_to "/" do %>
-      <div class="home-hover-buttons">
+      <div class="home-hover-buttons col-lg-4">
         <%= image_tag(@header_image, :class => "header-image") %>
         <h2 class="home-button">HOME</h2>
       </div>
     <% end %>
 
-    <div>
+    <div class="col-lg-4">
       <a href="https://www.instagram.com/tcannoncomics" target="_blank"><h1>INSTAGRAM</h1></a>
       <a href="https://twitter.com/TCannonComics" target="_blank"><h1>TWITTER</h1></a>
       <a href="https://tcannoncomics.tumblr.com" target="_blank"><h1>TUMBLR</h1></a>

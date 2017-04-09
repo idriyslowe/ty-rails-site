@@ -46,8 +46,9 @@ ActiveRecord::Schema.define(version: 20170402200123) do
     t.integer  "year"
     t.string   "details"
     t.string   "price"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.boolean  "in_store",    default: true
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.string   "subtitle"
     t.string   "issue_type"
   end
@@ -73,8 +74,10 @@ ActiveRecord::Schema.define(version: 20170402200123) do
     t.string   "price"
     t.string   "size"
     t.string   "paypal_link"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "image"
+    t.boolean  "in_store",    default: true
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
 end

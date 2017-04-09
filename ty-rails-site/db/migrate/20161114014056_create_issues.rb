@@ -8,6 +8,7 @@ class CreateIssues < ActiveRecord::Migration
       t.integer :year
       t.string :details
       t.string :price
+      t.boolean :in_store, default: true
 
       t.timestamps null: false
     end

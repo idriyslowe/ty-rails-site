@@ -50,10 +50,12 @@ Issue.create([
     synopsis: "In a timeless city, a young thief named Isaac struggles to connect with a beautiful girl.  The bartering inhabitants are challenged by the public speeches of a great thinker, while a mysterious man constructs a machine powered by stolen religious relics.",
     issue_type: :issue,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    details: "28 pages b/w, (8.25\"x10.75\")",
     year: "2015",
+    in_store: true,
     price: "8.75",
       images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus1_Cover_prev website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus1prev1_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus1prev2_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus1prev3_website.jpg').open, image_type: :page, page: nil},
@@ -68,10 +70,12 @@ Issue.create([
     synopsis: "Isaac continues gathering artifacts for Absalom, while also working with Alphonse and Dom to mark the city. A local religious group worships together at a cathedral under watchful eyes. Children are frightened by a strange creature seen near Absalom's shop. Isaac witnesses a shocking event while spying on Absalom.",
     issue_type: :issue,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    details: "28 pages b/w, (8.25\"x10.75\")",
     year: "2015",
+    in_store: true,
     price: "8.75",
       images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus_2-Cover-prev website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus2_4prev_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus2_5prev_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus2_6prev_website.jpg').open, image_type: :page, page: nil},
@@ -85,10 +89,12 @@ Issue.create([
     synopsis: "Isaac, feeling shunned by Celeste, attempts his most daring robbery. Absalom discovers the frightening side effects of his research. Dom & Isaac's friendship is clouded, leaving Isaac searching for answers in Absalom's lab.",
     issue_type: :trade,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    details: "28 pages b/w, (8.25\"x10.75\")",
     year: "2015",
+    in_store: true,
     price: "8.75",
       images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus3_cover-prev_website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus3_7_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus3_8_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus3_9_website.jpg').open, image_type: :page, page: nil},
@@ -104,11 +110,12 @@ Issue.create([
     synopsis: "Isaac steps into Absalom's mysterious machine, intrigued by its power of communication. Orrin, chief of police, enlists the help of an outside contractor to locate the serial thief (Isaac) who has eluded them up to this point.",
     issue_type: :trade,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    details: "28 pages b/w, (8.25\"x10.75\")",
     year: "2015",
+    in_store: true,
     price: "8.75",
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/victus4_Cover_prev_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/victus4_Cover_prev_website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus4-2_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus4-3_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus4-4_website.jpg').open, image_type: :page, page: nil},
@@ -126,8 +133,23 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: true,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/comic/series_image/SpecRel-FrontCover-web.jpg').open, image_type: :page, page: nil}
+        {uploaded_image: Pathname.new('public/uploads/comic/series_image/SpecRel-FrontCover-web.jpg').open, image_type: :cover, page: nil}
+      ]
+  },
+  {
+    title: "Speculative Relationships 2",
+    comic_id: 2,
+    synopsis: "A Science Fiction Romance Comics Anthology",
+    issue_type: :trade,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    year: "2015",
+    price: "8.75",
+    in_store: true,
+      images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/comic/series_image/SpecRel-FrontCover-web.jpg').open, image_type: :cover, page: nil}
       ]
   },
   # SIMON 1-4
@@ -140,8 +162,9 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: false,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/simon1.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/simon1.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/simon2.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/simon3.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/simon4.jpg').open, image_type: :page, page: nil},
@@ -160,8 +183,9 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: false,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/learn0.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/learn0.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/learn1.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/learn2.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/learn3.jpg').open, image_type: :page, page: nil},
@@ -182,8 +206,9 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: false,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/clone1_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone1_website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/clone2_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/clone3_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/clone4_website.jpg').open, image_type: :page, page: nil},
@@ -206,8 +231,9 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: false,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/when1_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/when1_website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/when2_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/when3_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/when4_website.jpg').open, image_type: :page, page: nil},
@@ -225,8 +251,9 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: false,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/you_see_1_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/you_see_1_website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/you_see_2_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/you_see_3_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/you_see_4_website.jpg').open, image_type: :page, page: nil}
@@ -241,8 +268,9 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: false,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk1_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk1_website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/ticktalk2_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/ticktalk3_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/ticktalk4_website.jpg').open, image_type: :page, page: nil},
@@ -261,10 +289,11 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-prev-1_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-prev-2_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilistcover_website.jpg').open, image_type: :page, page: nil}
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilistcover_website.jpg').open, image_type: :cover, page: nil}
       ]
   },
   {
@@ -276,6 +305,7 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/3x3cube_1_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/3x3cube_2_website.jpg').open, image_type: :page, page: nil},
@@ -287,20 +317,92 @@ Issue.create([
     title: "Simon: Square One",
     comic_id: 3,
     synopsis: "...",
-    subtitle: "Subtitle of issue 3",
     issue_type: :issue,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
+    in_store: false,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/squareone-cover_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/squareone-cover_website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/squareone-1_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/squareone-2_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/squareone-3_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/squareone-4_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/squareone-5_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/squareone-6_website.jpg').open, image_type: :page, page: nil}
+      ]
+  },
+  # GARY
+  {
+    title: "Gary 1",
+    comic_id: 4,
+    synopsis: "Chapter 1",
+    issue_type: :issue,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    year: "2015",
+    price: "8.75",
+    in_store: true,
+      images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-1.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-4.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-18.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-19.jpg').open, image_type: :page, page: nil}
+      ]
+  },
+  {
+    title: "Gary #2",
+    comic_id: 4,
+    synopsis: "Chapter 2",
+    issue_type: :issue,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    year: "2015",
+    price: "8.75",
+    in_store: true,
+      images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-1.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-7.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-8.jpg').open, image_type: :page, page: nil}
+      ]
+  },
+    {
+    title: "Gary #3",
+    comic_id: 4,
+    synopsis: "Chapter 3",
+    issue_type: :issue,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    year: "2015",
+    price: "8.75",
+    in_store: true,
+      images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_1.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_14.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_15.jpg').open, image_type: :page, page: nil}
+      ]
+  },
+  {
+    title: "Gary #4",
+    comic_id: 4,
+    synopsis: "Chapter 4",
+    issue_type: :issue,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    year: "2015",
+    price: "8.75",
+    in_store: true,
+      images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_5.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_6.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_9.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_10.jpg').open, image_type: :page, page: nil}
       ]
   }
 ])
@@ -393,19 +495,57 @@ Print.create!([
     price: "8.75",
     size: "8.5\" x 11\"",
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    image: Pathname.new("public/uploads/portfolio/Pugilist-prev-Portfolio.jpg").open
+    in_store: true,
+    image: Pathname.new("public/uploads/prints/ApocalypseCOLOR2.jpg").open
   },
   {
     price: "8.75",
     size: "8.5\" x 11\"",
+    in_store: true,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    image: Pathname.new("public/uploads/portfolio/Pugilist-prev-Portfolio.jpg").open
+    image: Pathname.new("public/uploads/prints/DOOM-bw.tif").open
   },
   {
     price: "8.75",
     size: "8.5\" x 11\"",
+    in_store: true,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    image: Pathname.new("public/uploads/portfolio/Pugilist-prev-Portfolio.jpg").open
+    image: Pathname.new("public/uploads/prints/LAST_PROPHET-bw.jpg").open
+  },
+  {
+    price: "8.75",
+    size: "8.5\" x 11\"",
+    in_store: true,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    image: Pathname.new("public/uploads/prints/LAST PROPHET-color.jpg").open
+  },
+  {
+    price: "8.75",
+    size: "8.5\" x 11\"",
+    in_store: true,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    image: Pathname.new("public/uploads/prints/Machine_Man_8x11.jpg").open
+  },
+  {
+    price: "8.75",
+    size: "8.5\" x 11\"",
+    in_store: true,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    image: Pathname.new("public/uploads/prints/Paybacks-bloodpouch-Color.jpg").open
+  },
+  {
+    price: "8.75",
+    size: "8.5\" x 11\"",
+    in_store: true,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    image: Pathname.new("public/uploads/prints/TheThing-2_color-SIZE.jpg").open
+  },
+  {
+    price: "8.75",
+    size: "8.5\" x 11\"",
+    in_store: true,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    image: Pathname.new("public/uploads/prints/victus-printCELESTE.jpg").open
   }
 ])
 

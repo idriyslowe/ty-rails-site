@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'posts#index'
 
-# TODO: REFACTOR WITH RESOURCES
+# TODO: REFACTOR WITH RESOURCES. COMICS IS READY + SHOP, POSTS IS READY + ARCHIVE, ISSUES IS READY
 
   get '/posts/index' => 'posts#index'
   get '/posts/archive' => 'posts#archive'
@@ -36,5 +36,6 @@ Rails.application.routes.draw do
   end
 
   resources :portfolio_items, except: [:show]
+  resources :prints
 
 end

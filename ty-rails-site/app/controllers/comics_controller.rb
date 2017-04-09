@@ -1,7 +1,7 @@
 class ComicsController < ApplicationController
+  before_action :header_image, except: :show
   def index
     @comics = Comic.all
-    @header_image = "ty-home-image.jpg"
   end
 
   def show
@@ -11,13 +11,11 @@ class ComicsController < ApplicationController
 
   def shop
     @comics = Comic.all
-    # @prints = Print.all
-    @header_image = "ty-home-image.jpg"
+    @prints = Print.all
   end
 
   def new
     @comic = Comic.new
-    @header_image = "ty-home-image.jpg"
   end
 
   def create
@@ -50,5 +48,9 @@ class ComicsController < ApplicationController
   private
     def comic_params
       params.permit(:name, :description, :series_image)
+    end
+
+    def header_image
+      @header_image = "ty-home-image.jpg"
     end
 end

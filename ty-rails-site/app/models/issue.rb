@@ -9,8 +9,12 @@ class Issue < ActiveRecord::Base
   accepts_nested_attributes_for :images
   accepts_nested_attributes_for :comic
 
+  def self.for_sale
+    self.where(in_store: true)
+  end
+
   def cover_image
-    images.where(image_type: 'cover').first
+    images.where(image_type: 'cover').first || images.first
   end
 
   def interpret_shop_overlay_text

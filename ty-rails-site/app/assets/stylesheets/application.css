@@ -363,14 +363,12 @@ image {
   border-top: 3px solid black;
   border-bottom: 70px solid black;
   border-left: 90px solid var(--cube-left-color);
-}
-
-.post-image {
-  position: relative;
+  min-height: 500px;
 }
 
 .post-text {
   margin-left: 20%;
+  margin-top: 3%;
   text-align:justify
 }
 
@@ -400,8 +398,8 @@ image {
 .content-cube img {
   display: inline;
   float: left;
-  height: 200px;
-  margin-top: 1%;
+  height: 300px;
+  margin-right: 2%;
 }
 .content-cube p {
   display: inline;

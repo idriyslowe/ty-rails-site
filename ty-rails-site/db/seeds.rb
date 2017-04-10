@@ -38,7 +38,7 @@ comics = Comic.create!([
   {
     name: "Gary",
     series_image: Pathname.new("public/uploads/comic/series_image/Gary-Series.jpg").open,
-    description: "This work is loosely based on the green river killer, who was responsible for the deaths of over 70 women from 1982-2001.  Though based on true events, none of the information contained within should be considered facts about any person living or dead."
+    description: "This work is loosely based on the green river killer, who was responsible for the deaths of over 70 women from 1982-2001.  Though based on true events, none of the information contained within should be considered facts about any person living or dead.\n\nFour Chapters."
   },
   {
     name: "Weed Priests",
@@ -264,23 +264,6 @@ Issue.create([
       ]
   },
   {
-    title: "Simon: You See Not What You Know",
-    comic_id: 3,
-    synopsis: "...",
-    issue_type: :trade,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
-    year: "2015",
-    price: "N/A",
-    in_store: false,
-      images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/you_see_1_website.jpg').open, image_type: :cover, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/you_see_2_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/you_see_3_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/you_see_4_website.jpg').open, image_type: :page, page: nil}
-      ]
-  },
-  {
     title: "Simon: Tick Talk",
     comic_id: 3,
     synopsis: "...",
@@ -322,23 +305,6 @@ Issue.create([
       ]
   },
   {
-    title: "Simon: Rubik's Cube",
-    comic_id: 3,
-    synopsis: "...",
-    issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
-    year: "2015",
-    price: "N/A",
-    in_store: false,
-      images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/3x3cube_1_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/3x3cube_2_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/3x3cube_3_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/3x3cube_4_website.jpg').open, image_type: :page, page: nil}
-      ]
-  },
-  {
     title: "Simon: Square One",
     comic_id: 3,
     synopsis: "...",
@@ -374,8 +340,6 @@ Issue.create([
         {uploaded_image: Pathname.new('public/uploads/issues/gary-2.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/gary-3.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/gary-4.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/gary-18.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/gary-19.jpg').open, image_type: :page, page: nil}
       ]
   },
   {
@@ -389,8 +353,6 @@ Issue.create([
     price: "8.75",
     in_store: false,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-1.jpg').open, image_type: :cover, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-2.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-7.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-8.jpg').open, image_type: :page, page: nil}
       ]
@@ -408,9 +370,7 @@ Issue.create([
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_1.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_2.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_3.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_14.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_15.jpg').open, image_type: :page, page: nil}
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_3.jpg').open, image_type: :page, page: nil}
       ]
   },
   {
@@ -424,8 +384,6 @@ Issue.create([
     price: "8.75",
     in_store: false,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_5.jpg').open, image_type: :cover, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_6.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_9.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_10.jpg').open, image_type: :page, page: nil}
       ]

@@ -71,8 +71,9 @@ ActiveRecord::Schema.define(version: 20170402200123) do
   end
 
   create_table "prints", force: :cascade do |t|
+    t.string   "title"
     t.string   "price"
-    t.string   "size"
+    t.string   "details"
     t.string   "paypal_link"
     t.string   "image"
     t.boolean  "in_store",    default: true

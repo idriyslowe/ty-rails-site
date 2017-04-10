@@ -2,8 +2,9 @@
   <h1>COMICS</h1>
   <div class="comics-shop-span row">
     <% @comics.each do |series| %>
-      <h4><%= series.name %></h4>
-      <hr>
+      <% if series.issues.for_sale.any? %>
+        <h4><%= series.name %></h4>
+        <hr>
       <div class="comics-index-span row">
         <% series.issues.for_sale.each do |issue| %>
 
@@ -22,6 +23,7 @@
 
         <% end %>
       </div>
+      <% end %>
     <% end %>
   </div>
   <div class="clearfix visible-lg-block"></div>

@@ -1,7 +1,8 @@
 class PrintsController < ApplicationController
+  skip_before_action :header_image, only: :show
+
   def index
     @prints = Comic.all
-    @header_image = "ty-home-image.jpg"
   end
 
   def show
@@ -11,7 +12,6 @@ class PrintsController < ApplicationController
 
   def new
     @print = Comic.new
-    @header_image = "ty-home-image.jpg"
   end
 
   def create

@@ -1,11 +1,9 @@
 class AboutsController < ApplicationController
   def index
-    @header_image = "ty-home-image.jpg"
     @about = About.first
   end
 
   def new
-    @header_image = "ty-home-image.jpg"
     @about = About.new
   end
 
@@ -19,7 +17,6 @@ class AboutsController < ApplicationController
   end
 
   def edit
-    @header_image = "ty-home-image.jpg"
     @about = About.find params[:id]
   end
 

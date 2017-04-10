@@ -1,5 +1,6 @@
 class ComicsController < ApplicationController
-  before_action :header_image, except: :show
+  skip_before_action :header_image, only: :show
+
   def index
     @comics = Comic.all
   end
@@ -48,9 +49,5 @@ class ComicsController < ApplicationController
   private
     def comic_params
       params.permit(:name, :description, :series_image)
-    end
-
-    def header_image
-      @header_image = "ty-home-image.jpg"
     end
 end

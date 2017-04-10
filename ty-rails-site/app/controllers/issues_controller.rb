@@ -1,4 +1,6 @@
 class IssuesController < ApplicationController
+  skip_before_action :header_image, only: :show
+
   def show
     @issue = Issue.find params[:id]
     @comic = @issue.comic
@@ -6,7 +8,6 @@ class IssuesController < ApplicationController
   end
 
   def new
-    @header_image = "ty-home-image.jpg"
     @issue = Issue.new
     @issue.images.build
   end

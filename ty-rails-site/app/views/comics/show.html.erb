@@ -4,7 +4,7 @@
   </div>
 
   <div class="comic-description">
-    <p><%= @comic.description %></p>
+    <p><%= render_markdown_html(@comic.description) %></p>
   </div>
 
   <div class="comics-index-span row">

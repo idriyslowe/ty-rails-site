@@ -11,6 +11,6 @@ class Print < ActiveRecord::Base
   end
 
   def overlay_text
-    "#{size}\n$#{price}\n"
+    "#{title}\n#{details}\n$#{price}\n"
   end
 end

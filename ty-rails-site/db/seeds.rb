@@ -3,9 +3,13 @@
 # *---------------------------
 
 Post.create!([
-  {heading: "This is New!", text: "Cliche artisan tilde, master cleanse mustache iPhone tumblr gochujang gentrify fanny pack beard fingerstache heirloom unicorn pok pok. Migas actually woke lyft vexillologist. Quinoa banjo paleo, craft beer gentrify seitan asymmetrical iceland pop-up crucifix fap vegan keffiyeh. Tumeric ramps four loko, narwhal air plant organic helvetica +1 lo-fi church-key man braid meh williamsburg. Brooklyn actually cardigan bushwick iceland. +1 affogato master cleanse photo booth. Pug farm-to-table butcher wayfarers.  +1 meditation fap dreamcatcher art party schlitz tacos vaporware, marfa edison bulb. Kickstarter green juice kale chips hella, williamsburg helvetica unicorn umami portland cold-pressed hot chicken vice scenester raclette narwhal. Bushwick keffiyeh butcher glossier, +1 chambray 90's paleo fingerstache tousled chicharrones taxidermy woke lumbersexual swag. Aesthetic next level mumblecore, pug selvage small batch bitters trust fund poutine. Salvia bitters single-origin coffee irony swag yuccie, enamel pin jianbing. Butcher flexitarian VHS, chicharrones hashtag thundercats beard la croix af forage migas. 3 wolf moon organic vexillologist, edison bulb 90's intelligentsia meggings taxidermy.",
-    image: Pathname.new('public/uploads/comic/series_image/Victus1_Cover_prev_website.jpg').open
-    }
+  {
+    heading: "This is New!",
+    text: "**New Website! C2E2 This weekend!**\n\n
+Come visit me at the [**Chicago Comics & Entertainment Expo**](http://www.c2e2.com/) this weekend, April 21st-23rd at Chicago’s McCormick Place.  You’ll find me at table **E-15**, with the incomparable [**Landis Blair**](http://www.landisblair.com/).  I’ll have lots of new stuff, including my 2016-17 sketchbook Muscle, Metal, Ink; the new risograph edition of Weed Priests; and my DOOM carnage 11”x17” prints!  Of course I’ll have Victus, Simon, Gary, and Speculative Relationships as well.  Hope to see you there!
+You’ll also notice that you are now looking at a spiffy new website, designed by my pal Idriys Lowe.  Idriys did some great work on the site and I encourage you to look around and see the changes.  **The Shop** is also up to date with new products, so go check it out!",
+    image: Pathname.new('public/uploads/posts/first_post.jpg').open
+  }
   # {heading: "This is the second one...", text: "\r\nA horizontal rule follows.\r\n\r\n***\r\n\r\nHere's a definition list:\r\n\r\napples\r\n  : Good for making applesauce.\r\noranges\r\n  : Citrus!\r\ntomatoes\r\n  : There's no \"e\" in tomatoe.\r\n\r\nAgain, text is indented 4 spaces. (Put a blank line between each\r\nterm/definition pair to spread things out more.)\r\n\r\nHere's a \"line block\":\r\n\r\n| Line one\r\n|   Line too\r\n| Line tree\r\n\r\nand images can be specified like so:\r\n\r\n![example image](/assets/ty-home-image.jpg \"An exemplary image\")",
   #   image: Pathname.new(files.sample).open
   # }
@@ -18,23 +22,28 @@ Post.create!([
 comics = Comic.create!([
   {
     name: "Victus",
-    series_image: Pathname.new("public/uploads/comic/series_image/Victus1_Cover_prev_website.jpg").open,
+    series_image: Pathname.new("public/uploads/comic/series_image/Victus-Series_1.jpg").open,
     description: "In a timeless city, a young thief named Isaac struggles to connect with a beautiful girl.  The bartering inhabitants are challenged by the public speeches of a great thinker, while a mysterious man constructs a machine powered by stolen religious relics."
   },
   {
     name: "Speculative Relationships",
-    series_image: Pathname.new("public/uploads/comic/series_image/SpecRel-FrontCover-web.jpg").open,
-    description: "In the mid-twentieth century, romance was most popular genre in comics. Comic publishers produced dozens of titles throughout the 1950's and 60's, and many of the mediums top artistic talents worked in romance comics. For a number of reasons, romance comics all but died out.\n\nEditors Tyrell Cannon and Scott Kroll see Speculative Relationships as way of reviving romance comics. They sought to breathe new life into the genre by mixing in some science fiction! The artists contributing to the anthology created work that is alive, vital, and unlike anything you've seen before."
+    series_image: Pathname.new("public/uploads/comic/series_image/SpecRel-Series.jpg").open,
+    description: "In the mid-twentieth century, romance was most popular genre in comics. Comic publishers produced dozens of titles throughout the 1950's and 60's, and many of the mediums top artistic talents worked in romance comics. For a number of reasons, romance comics all but died out.\n\nEditors Tyrell Cannon and Scott Kroll see Speculative Relationships as way of reviving romance comics. They sought to breathe new life into the genre by mixing in some science fiction! The artists contributing to the anthology created work that is alive, vital, and unlike anything you've seen before. \n\n##[Click here to Visit the Speculative Relationships Website!](http://www.speculativerelationships.com/)"
   },
   {
     name: "Simon",
-    series_image: Pathname.new("public/uploads/comic/series_image/simon1.jpg").open,
-    description: "Your mind is officially bent and then BLOWN!"
+    series_image: Pathname.new("public/uploads/comic/series_image/Simon-Series.jpg").open,
+    description: "Simon is a series of experimental comics, featuring a mouthless character who interacts with various creatures & environments.  Each story explores different topics, ranging from religion to violence to emotional states.  The various stories completed from 2001 - 2011 are available in a collected format in the shop."
   },
   {
     name: "Gary",
-    series_image: Pathname.new("public/uploads/comic/series_image/Gary_Collection_Cover-FINAL.jpg").open,
+    series_image: Pathname.new("public/uploads/comic/series_image/Gary-Series.jpg").open,
     description: "This work is loosely based on the green river killer, who was responsible for the deaths of over 70 women from 1982-2001.  Though based on true events, none of the information contained within should be considered facts about any person living or dead."
+  },
+  {
+    name: "Weed Priests",
+    series_image: Pathname.new("public/uploads/issues/WeedPpriestsCover.jpg").open,
+    description: "Weed Priests is a mini comic based on the album length song 'Dopesmoker' by the band Sleep.  The book features two interwoven stories by Tyrell Cannon & Aaron Pittman, as well as a pinup by JB Roe. It is risograph printed in green ink. The comic is best enjoyed accompanied by the song."
   }
 ])
 
@@ -50,10 +59,10 @@ Issue.create([
     synopsis: "In a timeless city, a young thief named Isaac struggles to connect with a beautiful girl.  The bartering inhabitants are challenged by the public speeches of a great thinker, while a mysterious man constructs a machine powered by stolen religious relics.",
     issue_type: :issue,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, (8.25\"x10.75\")",
+    details: "28 pages, b/w, 8.25\"x10.75\"",
     year: "2015",
     in_store: true,
-    price: "8.75",
+    price: "8.00",
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/Victus1_Cover_prev website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus1prev1_website.jpg').open, image_type: :page, page: nil},
@@ -70,10 +79,10 @@ Issue.create([
     synopsis: "Isaac continues gathering artifacts for Absalom, while also working with Alphonse and Dom to mark the city. A local religious group worships together at a cathedral under watchful eyes. Children are frightened by a strange creature seen near Absalom's shop. Isaac witnesses a shocking event while spying on Absalom.",
     issue_type: :issue,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, (8.25\"x10.75\")",
+    details: "28 pages, b/w, 8.25\"x10.75\"",
     year: "2015",
     in_store: true,
-    price: "8.75",
+    price: "8.00",
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/Victus_2-Cover-prev website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus2_4prev_website.jpg').open, image_type: :page, page: nil},
@@ -89,10 +98,10 @@ Issue.create([
     synopsis: "Isaac, feeling shunned by Celeste, attempts his most daring robbery. Absalom discovers the frightening side effects of his research. Dom & Isaac's friendship is clouded, leaving Isaac searching for answers in Absalom's lab.",
     issue_type: :trade,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, (8.25\"x10.75\")",
+    details: "28 pages, b/w, 8.25\"x10.75\"",
     year: "2015",
     in_store: true,
-    price: "8.75",
+    price: "8.00",
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/Victus3_cover-prev_website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus3_7_website.jpg').open, image_type: :page, page: nil},
@@ -110,10 +119,10 @@ Issue.create([
     synopsis: "Isaac steps into Absalom's mysterious machine, intrigued by its power of communication. Orrin, chief of police, enlists the help of an outside contractor to locate the serial thief (Isaac) who has eluded them up to this point.",
     issue_type: :trade,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, (8.25\"x10.75\")",
+    details: "28 pages, b/w, 8.25\"x10.75\"",
     year: "2015",
     in_store: true,
-    price: "8.75",
+    price: "8.00",
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/victus4_Cover_prev_website.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus4-2_website.jpg').open, image_type: :page, page: nil},
@@ -125,34 +134,46 @@ Issue.create([
   },
   # SPEC-REL 1/PROMO
   {
-    title: "Speculative Relationships",
+    title: "Speculative Relationships: Volume 1",
     comic_id: 2,
     synopsis: "A Science Fiction Romance Comics Anthology",
     issue_type: :trade,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    details: "80 pages, b/w, 6\"x9\", Anthology",
     year: "2015",
-    price: "8.75",
+    price: "15.00",
     in_store: true,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/comic/series_image/SpecRel-FrontCover-web.jpg').open, image_type: :cover, page: nil}
+        {uploaded_image: Pathname.new('public/uploads/issues/SpecRel-FrontCover-web.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR1-Sample1.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR1-Sample2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR1-Sample3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR1-Sample4.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR1-Sample5.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR1-Sample6.jpg').open, image_type: :page, page: nil}
       ]
   },
   {
-    title: "Speculative Relationships 2",
+    title: "Speculative Relationships: Volume 2",
     comic_id: 2,
     synopsis: "A Science Fiction Romance Comics Anthology",
     issue_type: :trade,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    details: "136 pages, b/w, 6\"x9\", Anthology",
     year: "2015",
-    price: "8.75",
+    price: "20.00  ",
     in_store: true,
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/comic/series_image/SpecRel-FrontCover-web.jpg').open, image_type: :cover, page: nil}
+        {uploaded_image: Pathname.new('public/uploads/issues/SR2Cover2.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR2-Sample1.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR2-Sample2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR2-Sample3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR2-Sample4.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR2-Sample5.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/SR2-Sample6.jpg').open, image_type: :page, page: nil}
       ]
   },
-  # SIMON 1-4
+  # SIMON 1-4. TODO: CREATE THE COLLECTION THAT DOESN'T SHOW UP IN SHOW, ONLY IN SHOP
   {
     title: "Simon #1: Mercy",
     comic_id: 3,
@@ -161,7 +182,7 @@ Issue.create([
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
-    price: "8.75",
+    price: "N/A",
     in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/simon1.jpg').open, image_type: :cover, page: nil},
@@ -182,7 +203,7 @@ Issue.create([
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
-    price: "8.75",
+    price: "N/A",
     in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/learn0.jpg').open, image_type: :cover, page: nil},
@@ -205,7 +226,7 @@ Issue.create([
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
-    price: "8.75",
+    price: "N/A",
     in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/clone1_website.jpg').open, image_type: :cover, page: nil},
@@ -230,7 +251,7 @@ Issue.create([
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
-    price: "8.75",
+    price: "N/A",
     in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/when1_website.jpg').open, image_type: :cover, page: nil},
@@ -250,7 +271,7 @@ Issue.create([
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
-    price: "8.75",
+    price: "N/A",
     in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/you_see_1_website.jpg').open, image_type: :cover, page: nil},
@@ -267,7 +288,7 @@ Issue.create([
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
-    price: "8.75",
+    price: "N/A",
     in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/ticktalk1_website.jpg').open, image_type: :cover, page: nil},
@@ -288,12 +309,16 @@ Issue.create([
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
-    price: "8.75",
+    price: "N/A",
     in_store: false,
       images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilistcover_website.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-1.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-4.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-prev-1_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-prev-2_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilistcover_website.jpg').open, image_type: :cover, page: nil}
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-prev-2_website.jpg').open, image_type: :page, page: nil}
       ]
   },
   {
@@ -304,7 +329,7 @@ Issue.create([
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
-    price: "8.75",
+    price: "N/A",
     in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/3x3cube_1_website.jpg').open, image_type: :page, page: nil},
@@ -321,7 +346,7 @@ Issue.create([
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
-    price: "8.75",
+    price: "N/A",
     in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/squareone-cover_website.jpg').open, image_type: :cover, page: nil},
@@ -333,9 +358,9 @@ Issue.create([
         {uploaded_image: Pathname.new('public/uploads/issues/squareone-6_website.jpg').open, image_type: :page, page: nil}
       ]
   },
-  # GARY
+  # GARY 1-4. TODO: CREATE COLLECTION 1-3 THAT DOESN'T SHOW UP IN SHOW, ONLY IN SHOP
   {
-    title: "Gary 1",
+    title: "Gary Chapter 1",
     comic_id: 4,
     synopsis: "Chapter 1",
     issue_type: :issue,
@@ -343,7 +368,7 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
-    in_store: true,
+    in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/gary-1.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/gary-2.jpg').open, image_type: :page, page: nil},
@@ -354,7 +379,7 @@ Issue.create([
       ]
   },
   {
-    title: "Gary #2",
+    title: "Gary Chapter 2",
     comic_id: 4,
     synopsis: "Chapter 2",
     issue_type: :issue,
@@ -362,7 +387,7 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
-    in_store: true,
+    in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-1.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-2.jpg').open, image_type: :page, page: nil},
@@ -371,7 +396,7 @@ Issue.create([
       ]
   },
     {
-    title: "Gary #3",
+    title: "Gary Chapter 3",
     comic_id: 4,
     synopsis: "Chapter 3",
     issue_type: :issue,
@@ -379,7 +404,7 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
-    in_store: true,
+    in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_1.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_2.jpg').open, image_type: :page, page: nil},
@@ -397,12 +422,32 @@ Issue.create([
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
-    in_store: true,
+    in_store: false,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_5.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_6.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_9.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/GaryCh4_10.jpg').open, image_type: :page, page: nil}
+      ]
+  },
+  {
+    title: "Weed Priests",
+    comic_id: 5,
+    synopsis: "",
+    issue_type: :issue,
+    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    details: "16 pages, green ink, 5.5\"x8.5\", w/Aaron Pittman",
+    year: "2015",
+    price: "8.00",
+    in_store: false,
+      images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/WeedPpriestsCover.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/WP_5.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/WP_6.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/WP_7.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/WP_8.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/WP_9.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/WP_10.jpg').open, image_type: :page, page: nil}
       ]
   }
 ])
@@ -413,76 +458,64 @@ Issue.create([
 
 PortfolioItem.create!([
   {
-    title: "Victus #3",
+    title: "Cable2.jpg",
     details: "cover",
-    image: Pathname.new("public/uploads/portfolio/Victus3-CoverCOLOR-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/Cable2.jpg").open,
     year: "2015"
   },
   {
-    title: "Victus #3",
+    title: "DOOM.jpg",
     details: "pages 12-13",
-    image: Pathname.new("public/uploads/portfolio/Victus3_12-13-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/DOOM.jpg").open,
     year: "2015"
   },
   {
-    title: "Space-Mullet (Dark Horse Comics)",
+    title: "Kusanagi.jpg",
     details: "pin-up",
-    image: Pathname.new("public/uploads/portfolio/Space-Mullet-Pinup-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/Kusanagi.jpg").open,
     year: "2015"
   },
   {
-    title: "Dark Engine (Image Comics)",
+    title: "LAST_PROPHET.jpg",
     details: "pin-up",
-    image: Pathname.new("public/uploads/portfolio/DE_Pinup-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/LAST_PROPHET.jpg").open,
     year: "2015"
   },
   {
-    title: "The Paybacks (Dark Horse Comics)",
+    title: "Machine Man.jpg",
     details: "pin-up",
-    image: Pathname.new("public/uploads/portfolio/Paybacks-bloodpouch-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/Machine_Man.jpg").open,
     year: "2015"
   },
   {
-    title: "Machine Man",
-    details: "pin-up",
-    image: Pathname.new("public/uploads/portfolio/Machine Man-Portfolio.jpg").open,
-    year: "2014"
-  },
-  {
-    title: "Ghost Fleet #6 (Dark Horse Comics)",
+    title: "Paybacks-bloodpouch.jpg",
     details: "cover",
-    image: Pathname.new("public/uploads/portfolio/GFcover-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/Paybacks-bloodpouch.jpg").open,
     year: "2015"
   },
   {
-    title: "'Amplifier”, page 10'",
+    title: "Refugee.jpg",
     details: ", from Speculative Relationships: Volume 2",
-    image: Pathname.new("public/uploads/portfolio/Amplifier_10-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/Refugee.jpg").open,
     year: "2015"
   },
   {
-    title: "'Amplifier', pages 7-8",
+    title: "Space-Mullet-Pinup.jpg",
     details: ", from Speculative Relationships: Volume 2",
-    image: Pathname.new("public/uploads/portfolio/Amplifier_7_8-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/Space-Mullet-Pinup.jpg").open,
     year: "2015"
   },
   {
-    title: "Not for Prophet",
+    title: "TheThing1.jpg",
     details: "zine cover",
-    image: Pathname.new("public/uploads/portfolio/ProphetCover-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/TheThing1.jpg").open,
     year: "2015"
   },
   {
-    title: "Gary: Collection",
+    title: "victus4-Cover.jpg",
     details: "cover",
-    image: Pathname.new("public/uploads/portfolio/Gary_Collection_Cover-Portfolio.jpg").open,
+    image: Pathname.new("public/uploads/portfolio/victus4-Cover.jpg").open,
     year: "2014"
-  },
-  {
-    title: "Simon: Pugilist",
-    details: "pages, 3-4",
-    image: Pathname.new("public/uploads/portfolio/Pugilist-prev-Portfolio.jpg").open,
-    year: "2013"
   }
 ])
 
@@ -492,57 +525,57 @@ PortfolioItem.create!([
 
 Print.create!([
   {
-    price: "8.75",
-    size: "8.5\" x 11\"",
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    in_store: true,
-    image: Pathname.new("public/uploads/prints/ApocalypseCOLOR2.jpg").open
-  },
-  {
-    price: "8.75",
-    size: "8.5\" x 11\"",
+    title: "DOOM Carnage",
+    price: "20.00",
+    details: "b/w, 11\"x17\"",
     in_store: true,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    image: Pathname.new("public/uploads/prints/DOOM-bw.tif").open
+    image: Pathname.new("public/uploads/portfolio/DOOM.jpg").open
   },
   {
-    price: "8.75",
-    size: "8.5\" x 11\"",
+    title: "Victus: Rhino Skull",
+    price: "10.00",
+    details: "b/w, 8.5\"x11\"",
     in_store: true,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    image: Pathname.new("public/uploads/prints/LAST_PROPHET-bw.jpg").open
+    image: Pathname.new("public/uploads/prints/Victus-Rhino.jpg").open
   },
   {
-    price: "8.75",
-    size: "8.5\" x 11\"",
+    title: "Team Prophet",
+    price: "15.00",
+    details: "color, 11\"x17\"",
     in_store: true,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    image: Pathname.new("public/uploads/prints/LAST PROPHET-color.jpg").open
+    image: Pathname.new("public/uploads/prints/LAST_PROPHET-color.jpg").open
   },
   {
-    price: "8.75",
-    size: "8.5\" x 11\"",
+    title: "Machine Man",
+    price: "10.00",
+    details: "b/w, 8.5\"x11\"",
     in_store: true,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     image: Pathname.new("public/uploads/prints/Machine_Man_8x11.jpg").open
   },
   {
-    price: "8.75",
-    size: "8.5\" x 11\"",
+    title: "Victus: Machine",
+    price: "10.00",
+    details: "b/w, 8.5\"x11\"",
     in_store: true,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    image: Pathname.new("public/uploads/prints/Paybacks-bloodpouch-Color.jpg").open
+    image: Pathname.new("public/uploads/prints/Victus_2-print.jpg").open
   },
   {
-    price: "8.75",
-    size: "8.5\" x 11\"",
+    title: "Victus: Chapter IV cover",
+    price: "10.00",
+    details: "b/w, 8.5\"x11\"",
     in_store: true,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    image: Pathname.new("public/uploads/prints/TheThing-2_color-SIZE.jpg").open
+    image: Pathname.new("public/uploads/issues/victus4_Cover_prev_website.jpg").open
   },
   {
-    price: "8.75",
-    size: "8.5\" x 11\"",
+    title: "Victus: Celeste",
+    price: "10.00",
+    details: "b/w, 8.5\"x11\"",
     in_store: true,
     paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
     image: Pathname.new("public/uploads/prints/victus-printCELESTE.jpg").open
@@ -554,6 +587,8 @@ Print.create!([
 # *---------------------------
 
 About.create!(
-  text: "Born: October 31st, 1981 in Elgin, Illinois to Tony and Donna Cannon About: Tyrell received his Bachelors in Fine Art from The School of the Art Institute of Chicago, with an emphasis drawing, print, and film. As a comics artist, he's created work in the genres of science fiction (Victus), true crime (Gary, based on the Green River Killer), and experimental short form comics (Simon). His primary focus is to explore comics with an emphasis on variety of theme, mode of presentation, and technique. He is also the co-editor and co-creator of the science fiction romance comics anthology Speculative Relationships. Tyrell's work has been featured in Dark Horse Comics Ghost Fleet, Image Comics Dark Engine, and he is the inker on Opertoon's Upgrade Soul for iPad.",
+  text: "Born: October 31st, 1981 in Elgin, Illinois to Tony and Donna Cannon\n\nAbout:
+Tyrell is a comic book artist living and working in Chicago, IL.  A graduate of the School of the Art Institute of Chicago, he is known for his comics Gary, Simon, and Victus.  He is also the co-editor of the science fiction romance comics anthology Speculative Relationships.  In addition to self-publishing his work, Tyrell has created covers and pinups for Dark Horse, Image, and Heavy Metal comics, as well as artwork for television (Drew Carey Green Screen Show) and video games (Grappledrome, Dino D-Day).
+Tyrell strives to create comics that are thoughtful, well-crafted, diverse in subject matter, and push the comics medium forward.  He hopes to help promote the art form by supporting fellow creators and engaging in meaningful discussions about the potential of comics.",
   image: Pathname.new('public/uploads/about/abouttyrell.jpg').open
 )

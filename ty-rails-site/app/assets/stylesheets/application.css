@@ -84,6 +84,10 @@ section:after {
   display: block;
 }
 
+image {
+  max-width: 100%;
+}
+
 .main-section {
   text-align: center;
   padding-right: 5%;
@@ -121,12 +125,19 @@ section:after {
   overflow: hidden;
 }
 
+.home-hover-buttons {
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
 .header-image {
   border: 3px solid black;
   display: inline-block;
   z-index: 2;
-  max-height: 400px;
+  max-height: 390px;
   left: 0;
+  display:inline-block;
 }
 
 .header-wrapper div {
@@ -135,8 +146,8 @@ section:after {
 
 .header-wrapper div h1, .header-wrapper div p {
   border: 3px solid black;
-  padding: 6% 0 7% 0;
-  margin: 3% 0 0 0;
+  padding: 6% 0 6% 0;
+  margin: 2% 0 3% 0;
 }
 
 .home-button {
@@ -179,9 +190,15 @@ section:after {
   margin-bottom: 10%;
 }
 
+.portfolio-well img {
+  max-width: 1100px;
+}
+
 .comics-well {
   padding: 0%;
   margin-bottom: 10%;
+  overflow: hidden;
+  text-align: center;
 }
 
 .comics-well:hover .click-for-preview {
@@ -194,7 +211,6 @@ section:after {
 
 .comics-well img {
   height: 500px;
-  width: 70%;
 }
 
 .comics-well:nth-last-child(1):nth-child(odd) {
@@ -213,7 +229,7 @@ section:after {
   color: black;
   opacity: 0.7;
   position: absolute;
-  right: 20%;
+  right: 39.5%;
   top: 40%;
   font-size: 2em;
 }
@@ -236,7 +252,7 @@ section:after {
   color: black;
   opacity: 0.7;
   position: absolute;
-  right: 30%;
+  right: 33%;
   top: 40%;
   font-size: 2em;
 }
@@ -247,11 +263,10 @@ section:after {
   background-color: black;
   opacity: 0.5;
   position: absolute;
-  right: 15%;
   padding-top: 20%;
   font-size: 1.5em;
-  width: 70%;
-  height: 91%;
+  width: 100%;
+  height: 91.2%;
 }
 
 .comics-modal {
@@ -305,9 +320,9 @@ section:after {
   opacity: 0;
 }
 
-/*.slideshow-thumbnails {
-  margin-left: 33%;
-}*/
+.slideshow-thumbnails img {
+  margin-right: 0;
+}
 
 .page-header {
   font-size: 40px;
@@ -350,6 +365,15 @@ section:after {
   border-left: 90px solid var(--cube-left-color);
 }
 
+.post-image {
+  position: relative;
+}
+
+.post-text {
+  margin-left: 20%;
+  text-align:justify
+}
+
 .show-header h1 {
   margin-top: 0;
   margin-bottom: 2%;
@@ -371,10 +395,13 @@ section:after {
   padding-left: 0;
   font-size: 30px;
 }
+
+/*ALSO GETTING STYLES FROM POST-IMAGE. HOW TO CHECK FOR IMAGE BEFORE DOING ALL OF THIS?*/
 .content-cube img {
   display: inline;
   float: left;
-  width: 10%;
+  height: 200px;
+  margin-top: 1%;
 }
 .content-cube p {
   display: inline;
@@ -410,8 +437,7 @@ section:after {
 .carousel-inner > .item > a > img {
   text-align: center;
   display: block;
-  max-width: 100%;
-  height: 600px;
+  width: 100%;
   padding-left: 30%;
   padding-right: 30%;
 }

@@ -1,23 +1,19 @@
 class PostsController < ApplicationController
 
   def index
-    @header_image = "ty-home-image.jpg"
     @posts = Post.first(10)
   end
 
   def archive
-    @header_image = "ty-home-image.jpg"
     @posts = Post.all
   end
 
   def show
     @post = Post.find params[:id]
-    @header_image = "ty-home-image.jpg"
   end
 
   def new
     @post = Post.new
-    @header_image = "ty-home-image.jpg"
   end
 
   def edit

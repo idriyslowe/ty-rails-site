@@ -56,11 +56,15 @@ Issue.create([
   {
     title: "Victus #1",
     comic_id: 1,
-    synopsis: "In a timeless city, a young thief named Isaac struggles to connect with a beautiful girl.  The bartering inhabitants are challenged by the public speeches of a great thinker, while a mysterious man constructs a machine powered by stolen religious relics.",
+    synopsis: "2013",
     issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages, b/w, 8.25\"x10.75\"",
-    year: "2015",
+    year: "2013",
     in_store: true,
     price: "8.00",
       images_attributes: [
@@ -76,11 +80,15 @@ Issue.create([
   {
     title: "Victus #2",
     comic_id: 1,
-    synopsis: "Isaac continues gathering artifacts for Absalom, while also working with Alphonse and Dom to mark the city. A local religious group worships together at a cathedral under watchful eyes. Children are frightened by a strange creature seen near Absalom's shop. Isaac witnesses a shocking event while spying on Absalom.",
+    synopsis: "2013",
     issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages, b/w, 8.25\"x10.75\"",
-    year: "2015",
+    year: "2013",
     in_store: true,
     price: "8.00",
       images_attributes: [
@@ -95,9 +103,13 @@ Issue.create([
   {
     title: "Victus #3",
     comic_id: 1,
-    synopsis: "Isaac, feeling shunned by Celeste, attempts his most daring robbery. Absalom discovers the frightening side effects of his research. Dom & Isaac's friendship is clouded, leaving Isaac searching for answers in Absalom's lab.",
+    synopsis: "2015",
     issue_type: :trade,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages, b/w, 8.25\"x10.75\"",
     year: "2015",
     in_store: true,
@@ -109,38 +121,45 @@ Issue.create([
         {uploaded_image: Pathname.new('public/uploads/issues/Victus3_9_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus3_10_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus3_11_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Victus3_12-13_spread_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/Victus3_cover-prev_website.jpg').open, image_type: :page, page: nil}
       ]
   },
   {
     title: "Victus #4",
     comic_id: 1,
-    synopsis: "Isaac steps into Absalom's mysterious machine, intrigued by its power of communication. Orrin, chief of police, enlists the help of an outside contractor to locate the serial thief (Isaac) who has eluded them up to this point.",
+    synopsis: "2016",
     issue_type: :trade,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages, b/w, 8.25\"x10.75\"",
-    year: "2015",
+    year: "2016",
     in_store: true,
     price: "8.00",
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/victus4_Cover_prev_website.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/victus4-titlepg_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus4-2_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus4-3_website.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/victus4-4_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/victus4-5_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/victus4-titlepg_website.jpg').open, image_type: :page, page: nil}
+        {uploaded_image: Pathname.new('public/uploads/issues/victus4-5_website.jpg').open, image_type: :page, page: nil}
       ]
   },
   # SPEC-REL 1/PROMO
   {
     title: "Speculative Relationships: Volume 1",
     comic_id: 2,
-    synopsis: "A Science Fiction Romance Comics Anthology",
+    synopsis: "2014\n\nContributors:\n\nTyrell Cannon, Scott Kroll, Beck Kramer, Ezra Claytan Daniels & Ben Passmore, Grim Wilkins, Mike Manomivibul, M.R. Trower, Amara Leipzig, Liam Cobb, Isabella Rotman, Max & Morrow Dowdle, Rich Foster, Kat Verhoeven, Daniel Warren Johnson",
     issue_type: :trade,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "80 pages, b/w, 6\"x9\", Anthology",
-    year: "2015",
+    year: "2014",
     price: "15.00",
     in_store: true,
       images_attributes: [
@@ -156,9 +175,13 @@ Issue.create([
   {
     title: "Speculative Relationships: Volume 2",
     comic_id: 2,
-    synopsis: "A Science Fiction Romance Comics Anthology",
+    synopsis: "2015\n\nContributors:\n\nTyrell Cannon, Scott Kroll, Mike Manomivibul, Isabella Rotman, Rinko Endo, Daniel Warren Johnson",
     issue_type: :trade,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "136 pages, b/w, 6\"x9\", Anthology",
     year: "2015",
     price: "20.00  ",
@@ -177,11 +200,15 @@ Issue.create([
   {
     title: "Simon #1: Mercy",
     comic_id: 3,
-    synopsis: "First of four stories",
+    synopsis: "2001",
     issue_type: :trade,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
-    year: "2015",
+    year: "2001",
     price: "N/A",
     in_store: false,
       images_attributes: [
@@ -196,36 +223,17 @@ Issue.create([
       ]
   },
   {
-    title: "Simon #2: Learn",
-    comic_id: 3,
-    synopsis: "Second of four stories",
-    issue_type: :trade,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
-    year: "2015",
-    price: "N/A",
-    in_store: false,
-      images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/learn0.jpg').open, image_type: :cover, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/learn1.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/learn2.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/learn3.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/learn4.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/learn5.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/learn6.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/learn7.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/learn8.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/learn9.jpg').open, image_type: :page, page: nil}
-      ]
-  },
-  {
     title: "Simon #3: The Clone War",
     comic_id: 3,
-    synopsis: "Third of four stories",
+    synopsis: "2003",
     issue_type: :trade,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
-    year: "2015",
+    year: "2003",
     price: "N/A",
     in_store: false,
       images_attributes: [
@@ -246,11 +254,15 @@ Issue.create([
   {
     title: "Simon #4: When",
     comic_id: 3,
-    synopsis: "Last of four stories",
+    synopsis: "2004",
     issue_type: :trade,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
-    year: "2015",
+    year: "2004",
     price: "N/A",
     in_store: false,
       images_attributes: [
@@ -264,13 +276,17 @@ Issue.create([
       ]
   },
   {
-    title: "Simon: Tick Talk",
+    title: "Simon: Whence",
     comic_id: 3,
-    synopsis: "...",
+    synopsis: "(formerly Tick Talk) 2011",
     issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
-    year: "2015",
+    year: "2009",
     price: "N/A",
     in_store: false,
       images_attributes: [
@@ -285,33 +301,17 @@ Issue.create([
       ]
   },
   {
-    title: "Simon: Pugilist",
-    comic_id: 3,
-    synopsis: "...",
-    issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
-    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
-    year: "2015",
-    price: "N/A",
-    in_store: false,
-      images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilistcover_website.jpg').open, image_type: :cover, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-1.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-2.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-3.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-4.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-prev-1_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-prev-2_website.jpg').open, image_type: :page, page: nil}
-      ]
-  },
-  {
     title: "Simon: Square One",
     comic_id: 3,
-    synopsis: "...",
+    synopsis: "2012",
     issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
-    year: "2015",
+    year: "2009",
     price: "N/A",
     in_store: false,
       images_attributes: [
@@ -324,13 +324,39 @@ Issue.create([
         {uploaded_image: Pathname.new('public/uploads/issues/squareone-6_website.jpg').open, image_type: :page, page: nil}
       ]
   },
+  {
+    title: "Simon: Pugilist",
+    comic_id: 3,
+    synopsis: "2014",
+    issue_type: :issue,
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
+    details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
+    year: "2013",
+    price: "N/A",
+    in_store: false,
+      images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilistcover_website.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-1.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-4.jpg').open, image_type: :page, page: nil}
+      ]
+  },
   # GARY 1-4. TODO: CREATE COLLECTION 1-3 THAT DOESN'T SHOW UP IN SHOW, ONLY IN SHOP
   {
     title: "Gary Chapter 1",
     comic_id: 4,
-    synopsis: "Chapter 1",
+    # synopsis: "Chapter 1",
     issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
@@ -339,15 +365,19 @@ Issue.create([
         {uploaded_image: Pathname.new('public/uploads/issues/gary-1.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/gary-2.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/gary-3.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/gary-4.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-4.jpg').open, image_type: :page, page: nil}
       ]
   },
   {
     title: "Gary Chapter 2",
     comic_id: 4,
-    synopsis: "Chapter 2",
+    # synopsis: "Chapter 2",
     issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
@@ -360,9 +390,13 @@ Issue.create([
     {
     title: "Gary Chapter 3",
     comic_id: 4,
-    synopsis: "Chapter 3",
+    # synopsis: "Chapter 3",
     issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
@@ -376,9 +410,13 @@ Issue.create([
   {
     title: "Gary #4",
     comic_id: 4,
-    synopsis: "Chapter 4",
+    # synopsis: "Chapter 4",
     issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
@@ -391,13 +429,17 @@ Issue.create([
   {
     title: "Weed Priests",
     comic_id: 5,
-    synopsis: "",
+    synopsis: "2017\n\nTyrell Cannon & Aaron Pittman, featuring a pinup by JB Roe",
     issue_type: :issue,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
     details: "16 pages, green ink, 5.5\"x8.5\", w/Aaron Pittman",
-    year: "2015",
+    year: "2017",
     price: "8.00",
-    in_store: false,
+    in_store: true,
       images_attributes: [
         {uploaded_image: Pathname.new('public/uploads/issues/WeedPpriestsCover.jpg').open, image_type: :cover, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/WP_5.jpg').open, image_type: :page, page: nil},
@@ -406,6 +448,97 @@ Issue.create([
         {uploaded_image: Pathname.new('public/uploads/issues/WP_8.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/WP_9.jpg').open, image_type: :page, page: nil},
         {uploaded_image: Pathname.new('public/uploads/issues/WP_10.jpg').open, image_type: :page, page: nil}
+      ]
+  },
+  # COLLECTIONS IN STORE
+  {
+    title: "Gary: Collection",
+    comic_id: 4,
+    synopsis: "2008-2011",
+    issue_type: :trade,
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
+    details: "152 pages b/w, Collects Gary #1-3",
+    year: "2012",
+    price: "20.00",
+    in_store: true,
+      images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-1.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/gary-4.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-7.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh2-8.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_1.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/GaryCh3_3.jpg').open, image_type: :page, page: nil}
+      ]
+  },
+  {
+    title: "Simon: The Collection, 2001-2011",
+    comic_id: 3,
+    # synopsis: "Collection",
+    issue_type: :trade,
+    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                <input type='hidden' name='cmd' value='_s-xclick'>
+                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
+                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+              </form> ",
+    details: "166 pages b/w, Collects 2001-11",
+    year: "2001-2011",
+    price: "22.00",
+    in_store: true,
+      images_attributes: [
+        {uploaded_image: Pathname.new('public/uploads/issues/simon1.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/simon2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/simon3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/simon4.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/simon5.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/simon6.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/simon7.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/simon8.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone1_website.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone2_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone3_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone4_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone5_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone6_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone7_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone8_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone9_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone10_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone11_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/clone12_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/when1_website.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/when2_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/when3_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/when4_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/when5_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/when6_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/when7_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk1_website.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk2_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk3_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk4_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk5_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk6_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk7_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/ticktalk8_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/squareone-cover_website.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/squareone-1_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/squareone-2_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/squareone-3_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/squareone-4_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/squareone-5_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/squareone-6_website.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilistcover_website.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-1.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Pugilist-4.jpg').open, image_type: :page, page: nil}
       ]
   }
 ])

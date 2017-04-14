@@ -1,6 +1,9 @@
 <section class="main-section container-fluid">
   <div class="show-header">
     <h1><%= @issue.title.upcase %></h1>
+    <% if @issue.synopsis %>
+      <h5><%= render_markdown_html(@issue.synopsis) %></h5>
+    <% end %>
   </div>
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->

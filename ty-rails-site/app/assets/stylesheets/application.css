@@ -378,6 +378,9 @@ image {
   font-size: 45px;
   text-align: center;
 }
+.show-header h5 {
+  margin-bottom: 2%;
+}
 
 .series-image {
   text-align: center;

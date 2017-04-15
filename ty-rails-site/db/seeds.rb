@@ -58,11 +58,12 @@ Issue.create([
     comic_id: 1,
     synopsis: "2013",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"F4NFKV3VH5LPJ\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     details: "28 pages, b/w, 8.25\"x10.75\"",
     year: "2013",
     in_store: true,
@@ -82,11 +83,12 @@ Issue.create([
     comic_id: 1,
     synopsis: "2013",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"UNDZ8L9FG2FKL\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     details: "28 pages, b/w, 8.25\"x10.75\"",
     year: "2013",
     in_store: true,
@@ -105,23 +107,24 @@ Issue.create([
     comic_id: 1,
     synopsis: "2015",
     issue_type: :trade,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"J4XR8NB3PEAZ2\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     details: "28 pages, b/w, 8.25\"x10.75\"",
     year: "2015",
     in_store: true,
     price: "8.00",
       images_attributes: [
-        {uploaded_image: Pathname.new('public/uploads/issues/Victus3_cover-prev_website.jpg').open, image_type: :cover, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Victus3_7_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Victus3_8_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Victus3_9_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Victus3_10_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Victus3_11_website.jpg').open, image_type: :page, page: nil},
-        {uploaded_image: Pathname.new('public/uploads/issues/Victus3_cover-prev_website.jpg').open, image_type: :page, page: nil}
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus3-Cover.jpg').open, image_type: :cover, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus3-1.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus3-2.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus3-3.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus3-4.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus3-5.jpg').open, image_type: :page, page: nil},
+        {uploaded_image: Pathname.new('public/uploads/issues/Victus3-6.jpg').open, image_type: :page, page: nil}
       ]
   },
   {
@@ -129,11 +132,12 @@ Issue.create([
     comic_id: 1,
     synopsis: "2016",
     issue_type: :trade,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"L68BPVR6PHG3W\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     details: "28 pages, b/w, 8.25\"x10.75\"",
     year: "2016",
     in_store: true,
@@ -153,11 +157,12 @@ Issue.create([
     comic_id: 2,
     synopsis: "2014\n\nContributors:\n\nTyrell Cannon, Scott Kroll, Beck Kramer, Ezra Claytan Daniels & Ben Passmore, Grim Wilkins, Mike Manomivibul, M.R. Trower, Amara Leipzig, Liam Cobb, Isabella Rotman, Max & Morrow Dowdle, Rich Foster, Kat Verhoeven, Daniel Warren Johnson",
     issue_type: :trade,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"NNNXGEJKSJ2V8\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     details: "80 pages, b/w, 6\"x9\", Anthology",
     year: "2014",
     price: "15.00",
@@ -177,11 +182,12 @@ Issue.create([
     comic_id: 2,
     synopsis: "2015\n\nContributors:\n\nTyrell Cannon, Scott Kroll, Mike Manomivibul, Isabella Rotman, Rinko Endo, Daniel Warren Johnson",
     issue_type: :trade,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"H4473DW8UHPFY\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     details: "136 pages, b/w, 6\"x9\", Anthology",
     year: "2015",
     price: "20.00  ",
@@ -202,11 +208,7 @@ Issue.create([
     comic_id: 3,
     synopsis: "2001",
     issue_type: :trade,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2001",
     price: "N/A",
@@ -227,11 +229,7 @@ Issue.create([
     comic_id: 3,
     synopsis: "2003",
     issue_type: :trade,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2003",
     price: "N/A",
@@ -256,11 +254,7 @@ Issue.create([
     comic_id: 3,
     synopsis: "2004",
     issue_type: :trade,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2004",
     price: "N/A",
@@ -280,11 +274,7 @@ Issue.create([
     comic_id: 3,
     synopsis: "(formerly Tick Talk) 2011",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2009",
     price: "N/A",
@@ -305,11 +295,7 @@ Issue.create([
     comic_id: 3,
     synopsis: "2012",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2009",
     price: "N/A",
@@ -329,11 +315,7 @@ Issue.create([
     comic_id: 3,
     synopsis: "2014",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2013",
     price: "N/A",
@@ -352,11 +334,7 @@ Issue.create([
     comic_id: 4,
     # synopsis: "Chapter 1",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
@@ -373,11 +351,7 @@ Issue.create([
     comic_id: 4,
     # synopsis: "Chapter 2",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
@@ -392,11 +366,7 @@ Issue.create([
     comic_id: 4,
     # synopsis: "Chapter 3",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
@@ -412,11 +382,7 @@ Issue.create([
     comic_id: 4,
     # synopsis: "Chapter 4",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    # paypal_link: "",
     details: "28 pages b/w, oversized comic (8.25\"x10.75\")",
     year: "2015",
     price: "8.75",
@@ -431,11 +397,12 @@ Issue.create([
     comic_id: 5,
     synopsis: "2017\n\nTyrell Cannon & Aaron Pittman, featuring a pinup by JB Roe",
     issue_type: :issue,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"ETFNBK78WAK54\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     details: "16 pages, green ink, 5.5\"x8.5\", w/Aaron Pittman",
     year: "2017",
     price: "8.00",
@@ -456,11 +423,12 @@ Issue.create([
     comic_id: 4,
     synopsis: "2008-2011",
     issue_type: :trade,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"FPL3WNYW4NF9S\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     details: "152 pages b/w, Collects Gary #1-3",
     year: "2012",
     price: "20.00",
@@ -482,11 +450,12 @@ Issue.create([
     comic_id: 3,
     # synopsis: "Collection",
     issue_type: :trade,
-    paypal_link: "<form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
-                <input type='hidden' name='cmd' value='_s-xclick'>
-                <input type='hidden' name='hosted_button_id' value='FPL3WNYW4NF9S'>
-                <input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
-              </form> ",
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"4F7HXG73U6CQ8\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     details: "166 pages b/w, Collects 2001-11",
     year: "2001-2011",
     price: "22.00",
@@ -620,7 +589,12 @@ Print.create!([
     price: "20.00",
     details: "b/w, 11\"x17\"",
     in_store: true,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"9ZBUSGQPQDWY2\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     image: Pathname.new("public/uploads/portfolio/DOOM.jpg").open
   },
   {
@@ -628,7 +602,12 @@ Print.create!([
     price: "10.00",
     details: "b/w, 8.5\"x11\"",
     in_store: true,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"NR6X8ZBX8LHXU\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     image: Pathname.new("public/uploads/prints/Victus-Rhino.jpg").open
   },
   {
@@ -636,7 +615,12 @@ Print.create!([
     price: "15.00",
     details: "color, 11\"x17\"",
     in_store: true,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"N3NNFE9L39DM8\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     image: Pathname.new("public/uploads/prints/LAST_PROPHET-color.jpg").open
   },
   {
@@ -644,7 +628,12 @@ Print.create!([
     price: "10.00",
     details: "b/w, 8.5\"x11\"",
     in_store: true,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"HZCKK3KP2GWNE\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     image: Pathname.new("public/uploads/prints/Machine_Man_8x11.jpg").open
   },
   {
@@ -652,7 +641,12 @@ Print.create!([
     price: "10.00",
     details: "b/w, 8.5\"x11\"",
     in_store: true,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"2M7SEN4QDNDG4\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     image: Pathname.new("public/uploads/prints/Victus_2-print.jpg").open
   },
   {
@@ -660,7 +654,12 @@ Print.create!([
     price: "10.00",
     details: "b/w, 8.5\"x11\"",
     in_store: true,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"JBN5L4457NVQQ\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     image: Pathname.new("public/uploads/issues/victus4_Cover_prev_website.jpg").open
   },
   {
@@ -668,7 +667,12 @@ Print.create!([
     price: "10.00",
     details: "b/w, 8.5\"x11\"",
     in_store: true,
-    paypal_link: 'https://www.paypal.com/cgi-bin/webscr',
+    paypal_link: "<form target=\"paypal\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
+<input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">
+<input type=\"hidden\" name=\"hosted_button_id\" value=\"Y633HDB3NBTN2\">
+<input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\">
+<img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">
+</form>",
     image: Pathname.new("public/uploads/prints/victus-printCELESTE.jpg").open
   }
 ])
